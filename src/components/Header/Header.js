@@ -1,28 +1,7 @@
 import React, { useState } from 'react'
 import RESUME from '../../assets/Stephan Benchemoul Resume.pdf'
 const Header = (props) => {
-  const { refObj } = props
-  const linkArr = [
-    {
-      to: 'About',
-      number: '01',
-      ref: refObj.aboutRef
-    },
-    {
-      to: 'Experience',
-      number: '02',
-      ref: refObj.experienceRef
-    },
-    {
-      to: 'Work',
-      number: '03',
-      ref: refObj.workRef
-    },
-    {
-      to: 'Contact',
-      number: '04',
-      ref: refObj.contactRef
-    }]
+  const { refObj, linkArr } = props
   const scrollToHome = () => refObj.homeRef.current.scrollIntoView(false)
   const scrollToElement = ref => ref.current.scrollIntoView()
   const [state, setState] = useState({
@@ -72,7 +51,7 @@ const Header = (props) => {
         <div className='left-nav flex'>
           {linkArr.map((item, idx) =>
             <div className='link-warp flex' key={idx}>
-              <div className='link-number'>{item.number}.</div>
+              <div className='link-number'>{item.number}</div>
               <div className='link-to' onClick={() => scrollToElement(item.ref)} >{item.to}</div>
             </div>
           )}

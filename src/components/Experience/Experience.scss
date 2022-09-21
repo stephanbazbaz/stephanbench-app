@@ -11,4 +11,11 @@
   .experience-text {
     max-width: 500px;
   }
+  .tabs-indicator {
+    right: unset;
+    left: 0;
+  }
+  .tab-btn {
+    align-items: flex-start;
+  }
 }

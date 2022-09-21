@@ -6,22 +6,24 @@ import PlayArrowOutlinedIcon from '@mui/icons-material/PlayArrowOutlined';
 import { aosConfig, aboutText, technologiesArr } from '../../constants';
 AOS.init(aosConfig)
 const About = (props) => {
-  const { myRef } = props
+  const { linkArr } = props
   return (
-    <div className='About' ref={myRef}>
+    <div className='About' ref={linkArr[0].ref}>
       <h1 className='title' data-aos="fade-up-left"
         data-aos-anchor-placement="top-center">
-        <span className='link-number'>01.</span>About me</h1>
+        <span className='link-number'>{linkArr[0].number}</span>{linkArr[0].to}</h1>
       <div className='about-row'>
         <div className='about-text-warp' data-aos="fade-up-right"
           data-aos-anchor-placement="top-center">
           <p className='about-text' >{aboutText} <br />
           </p>
-          <p className='about-text'> Here are a few technologies I’ve been working with recently:</p>
+          <p className='about-text'>Here are a few technologies I’ve been working with recently:</p>
           <div className='tech-warp flex'>
-            {technologiesArr.map((item, idx) => <div className='flex tech-col' key={`tech-${idx}`}><PlayArrowOutlinedIcon /><span>{item}</span></div>)}
-            {/* <div>{technologiesArr.slice(3, 6).map((item, idx) => <div className='flex tech-col' key={`tech-${idx}`}><PlayArrowOutlinedIcon /><span>{item}</span></div>)}</div> */}
-            {/* <div>{technologiesArr.slice(6).map((item, idx) => <div className='flex tech-col' key={`tech-${idx}`}><PlayArrowOutlinedIcon /><span>{item}</span></div>)}</div> */}
+            {technologiesArr.map((item, idx) =>
+              <div className='flex tech-col' key={`tech-${idx}`}>
+                <PlayArrowOutlinedIcon />
+                <span>{item}</span>
+              </div>)}
           </div>
 
         </div>

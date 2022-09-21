@@ -15,15 +15,37 @@ function App() {
     contactRef: useRef(null),
     homeRef: useRef(null)
   }
+  const linkArr = [
+    {
+      to: 'About',
+      number: '01.',
+      ref: refObj.aboutRef
+    },
+    {
+      to: 'Experience',
+      number: '02.',
+      ref: refObj.experienceRef
+    },
+    {
+      to: 'Work',
+      number: '03.',
+      ref: refObj.workRef
+    },
+    {
+      to: 'Contact',
+      number: '04.',
+      ref: refObj.contactRef
+    }
+  ]
   return (
     <div className="App">
-      <Header refObj={refObj} />
+      <Header refObj={refObj} linkArr={linkArr} />
       <div className='wrapper'>
         <Home myRef={refObj.homeRef} />
-        <About myRef={refObj.aboutRef} />
-        <Experience myRef={refObj.experienceRef} />
-        <Work myRef={refObj.workRef} />
-        <Contact myRef={refObj.contactRef} />
+        <About linkArr={linkArr} />
+        <Experience linkArr={linkArr} />
+        <Work linkArr={linkArr} />
+        <Contact linkArr={linkArr} />
         <Socials />
       </div>
     </div>
