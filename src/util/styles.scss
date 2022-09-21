@@ -1,0 +1,32 @@
+$greenColor: #64ffda;
+$whiteColor: white;
+$transparentHover: #6262629c;
+$greyColor: #9d9d9d;
+
+//fonts
+$font50: 50px;
+$font20: 20px;
+$font23: 23px;
+$font18: 18px;
+$font16: 16px;
+
+$titleFont: clamp(40px, 5vw, 80px);
+@font-face {
+  font-family: source_code;
+  src: url("../assets/Source_Code_Pro/SourceCodePro-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: quicksilver;
+  src: url("../assets/Quicksand/Quicksand-VariableFont_wght.ttf");
+}
+
+$paddingTopContainer: 80px;
+$lineHeight24: 24px;
+@mixin linkNumber {
+  color: $greenColor;
+  margin-right: 5px;
+}
+@mixin wh300 {
+  width: 300px;
+  height: 300px;
+}

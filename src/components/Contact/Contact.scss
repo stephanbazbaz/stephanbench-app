@@ -1,0 +1,10 @@
+@import "../../util/styles.scss";
+
+.Contact {
+  padding-top: $paddingTopContainer;
+  height: 100vh;
+  color: $whiteColor;
+  .link-number {
+    @include linkNumber;
+  }
+}

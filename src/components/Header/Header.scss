@@ -1,0 +1,67 @@
+@import "../../util/styles.scss";
+
+#site-header.hide {
+  top: -60px;
+}
+.hide {
+  top: -60px;
+}
+.Header {
+  transition: all 0.5s ease;
+  font-family: source_code;
+  padding: 0px 50px 0 43px;
+  background-color: #0a192f;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  height: 60px;
+  .navbar {
+    justify-content: space-between;
+    .link-number {
+      color: $greenColor;
+      margin-right: 5px;
+    }
+    .link-to {
+      color: $whiteColor;
+      text-decoration: none;
+      cursor: pointer;
+      &:hover {
+        color: $greenColor;
+      }
+    }
+    // .logo {
+    //   font-family: "source_code";
+    //   color: $greenColor;
+    //   font-size: 60px;
+    //   cursor: pointer;
+    //   transition: all 1s;
+    //   transform: rotateY(0deg);
+    //   &:hover {
+    //     transition: all 1s;
+    //     transform: rotateY(180deg);
+    //   }
+    // }
+    .logo-img {
+      width: 50px;
+    }
+    .link-warp {
+      margin: 0 7px;
+    }
+    .resume-btn {
+      color: #64ffda;
+      background-color: transparent;
+      border: 1px solid $greenColor;
+      padding: 6px 13px;
+      border-radius: 3px;
+      margin-left: 25px;
+      a {
+        text-decoration: none;
+        color: $whiteColor;
+      }
+      &:hover {
+        background-color: $transparentHover;
+        cursor: pointer;
+      }
+    }
+  }
+}

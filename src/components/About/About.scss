@@ -1,0 +1,78 @@
+@import "../../util/styles.scss";
+$borderRadius: 5px;
+.About {
+  padding-top: $paddingTopContainer;
+  height: 100vh;
+  color: $whiteColor;
+  text-align: left;
+
+  .link-number {
+    @include linkNumber;
+  }
+
+  .about-row {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    .about-text-warp {
+      color: $greyColor;
+      line-height: $lineHeight24;
+      max-width: 90%;
+      letter-spacing: 0.5px;
+      font-size: $font18;
+      .about-text {
+        margin-bottom: 30px;
+      }
+      .tech-warp {
+        flex-flow: wrap;
+        justify-content: space-between;
+        max-width: 500px;
+        font-size: $font16;
+        .tech-col {
+          margin: 10px 0;
+          min-width: 130px;
+          font-family: source_code;
+        }
+        svg {
+          color: $greenColor;
+          margin-right: 5px;
+        }
+      }
+    }
+    .img-warp {
+      position: relative;
+      width: fit-content;
+      .my-pic {
+        @include wh300;
+        z-index: 4;
+        position: absolute;
+        border-radius: $borderRadius;
+      }
+      .filter {
+        @include wh300;
+        position: absolute;
+        background-color: rgba(100, 255, 219, 0.52);
+        z-index: 6;
+        border-radius: $borderRadius;
+        transition: all 0.5s;
+        &:hover {
+          background-color: #64ffdb00;
+          + .square {
+            left: 15px;
+            top: 15px;
+          }
+        }
+      }
+      .square {
+        border-radius: $borderRadius;
+        @include wh300;
+        border: 1px solid $greenColor;
+        position: absolute;
+        left: 30px;
+        top: 30px;
+        z-index: 0;
+        transition: all 0.5s;
+      }
+    }
+  }
+}

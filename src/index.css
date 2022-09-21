@@ -5,9 +5,31 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #112240;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    monospace,
+    "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+}
+
+h1, p {
+  padding: 0;
+  margin: 0;
+}
+
+.title {
+  font-family: "source_code";
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
 }

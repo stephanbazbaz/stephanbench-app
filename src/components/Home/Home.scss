@@ -1,0 +1,32 @@
+@import "../../util/styles.scss";
+
+.Home {
+  height: calc(85vh - 75px);
+  text-align: left;
+  padding-top: 30px;
+  scroll-margin-top: 80px;
+  scroll-snap-align: start;
+  .my-name-is {
+    color: $greenColor;
+    font-family: source_code;
+  }
+  .full-name,
+  .profession {
+    font-size: $titleFont;
+    line-height: 1.5;
+  }
+  .full-name {
+    color: $whiteColor;
+  }
+  .profession {
+    color: $greyColor;
+  }
+  .description {
+    margin-top: 60px;
+    font-family: quicksilver;
+    font-size: $font23;
+    color: white;
+    max-width: 684px;
+    line-height: 33px;
+  }
+}

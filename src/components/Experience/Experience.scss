@@ -1,0 +1,14 @@
+@import "../../util/styles.scss";
+
+.Experience {
+  padding-top: $paddingTopContainer;
+  height: 100vh;
+  color: $whiteColor;
+  text-align: left;
+  .link-number {
+    @include linkNumber;
+  }
+  .experience-text {
+    max-width: 500px;
+  }
+}

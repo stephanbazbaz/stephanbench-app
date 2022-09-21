@@ -1,0 +1,33 @@
+@import "../../util/styles.scss";
+
+.Socials {
+  .logo-row {
+    position: fixed;
+    bottom: 0;
+    left: 60px;
+    .logo-col {
+      width: 25px;
+      margin: 20px 0;
+      position: relative;
+      transition: all 0.3s;
+      top: 0px;
+      &:hover {
+        top: -3px;
+      }
+      .svg-icon {
+        fill: $greyColor;
+        &:hover {
+          cursor: pointer;
+          fill: $greenColor;
+        }
+      }
+    }
+  }
+  .dVLQAC {
+    border-left: 1px solid $greyColor;
+    display: block;
+    width: 1px;
+    height: 130px;
+    margin: 0px auto;
+  }
+}
