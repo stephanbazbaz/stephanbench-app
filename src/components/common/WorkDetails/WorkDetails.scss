@@ -1,0 +1,63 @@
+@import "../../../util/styles.scss";
+.visible {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+.no-visible {
+  opacity: 0;
+}
+.Experience .experience-details {
+  margin-left: 30px;
+  .experience-title {
+    line-height: $lineHeight42;
+    font-size: $font23;
+    .label {
+      color: $greenColor;
+      position: relative;
+      cursor: pointer;
+      a {
+        color: $greenColor;
+        text-decoration: none;
+      }
+    }
+    .label:after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      right: 0;
+      width: 0;
+      bottom: -5px;
+      background: $greenColor;
+      height: 1px;
+      transition-property: width;
+      transition-duration: 0.3s;
+      transition-timing-function: ease-out;
+    }
+    .label:hover:after,
+    .label:focus:after,
+    .label:active:after {
+      left: 7px;
+      right: auto;
+      width: 95%;
+    }
+  }
+  .period {
+    font-family: source_code;
+    font-size: $font16;
+    color: $greyColor;
+  }
+  .description-warp {
+    max-width: 650px;
+    .description-row {
+      display: flex;
+      margin: 10px 0;
+      color: $greyColor;
+      .description-text {
+        line-height: $lineHeight24;
+      }
+      svg {
+        color: $greenColor;
+      }
+    }
+  }
+}

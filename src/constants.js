@@ -46,9 +46,17 @@ export const aosConfig = {
   easing: 'ease-in',
   mirror: true,
 };
+export const aosConfig2 = {
+  duration: 500,
+  easing: 'ease-in',
+  mirror: true,
+};
 
 export const loremIpsum = "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
 export const aboutText = "Hi! My name is Stephan and I enjoy creating things that live on the internet. My relationship with computers & softwares started back in 2006 when I did my Bachelor degree in Sound engineering. After years in the music production industry i decided to take things to the next level and studied web development. As a web developer I had the privilege of working with 2 major outsourcing companies which gave web solutions to fintech companies and start ups. As a developer my main focus is building accessible, inclusive products and digital experiences for a variety of clients."
+export const techText = "Here are a few technologies I’ve been working with recently:"
+
+
 export const technologiesArr = [
   'Javascript',
   'Typescript',
@@ -59,4 +67,60 @@ export const technologiesArr = [
   'Mongo DB',
   'Figma',
   'Wordpress'
+]
+export const aosFadeUpLeft = {
+  // 'data-aos-once': true,
+  'data-aos': "fade-up-left",
+  'data-aos-anchor-placement': "top-center"
+}
+export const aosFadeUpRight = {
+  // 'data-aos-once': true,
+  'data-aos': "fade-up-right",
+  'data-aos-anchor-placement': "top-center"
+}
+export const aosFadeUpUp = {
+  // 'data-aos-once': true,
+  'data-aos': "fade-up",
+  'data-aos-anchor-placement': "top-center"
+}
+export const aboutObj = {
+  myNameIs: 'Hi, my name is',
+  fullName: 'Stephan Benchemoul.',
+  profession: "Web Developer & Sound Designer.",
+  description: 'I build and design web applications using modern web technologies with a focus on responsiveness, accessibility and pleasing aesthetics .'
+}
+export const experienceArr = [
+  {
+    label: 'Freelance',
+    date: 'May 2020 - Present',
+    description: [
+      'Write modern, performant, maintainable code for a diverse array of client and internal projects',
+      'Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify',
+    ],
+    title: 'Web Developer',
+    link: 'https://www.linkedin.com/in/stephan-benchemoul-38879320b/'
+  },
+  {
+    label: 'PWM',
+    date: 'May 2021 - Sep 2022',
+    description: [
+      'Web solutions for major tech companies.',
+      'Interfaced with user experience designers and other developers to ensure thoughtful and coherent user experiences across web browsers',
+      "Worked with a team of 9 developers to build a CRM for a major fin tech company",
+      'Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis'
+    ],
+    title: 'Full stack Developer',
+    link: 'https://www.linkedin.com/company/pwm-il/'
+  },
+  {
+    label: 'Moveo Group',
+    date: 'Dec 2020 - May 2021',
+    description: [
+      'Built a full Culinary App with Admin and User systems using Angular for Front-end developing and in Node Js for Server side. database in Mongo DB.',
+      'Built a design system for a major bank company using React, Mui Components, Scss and Redux Toolkit.',
+      'Communicate with multi-disciplinary teams of engineers, designers, product managers, and clients on a daily basis'
+    ],
+    title: 'Web Developer',
+    link: 'https://www.moveo.group/'
+  }
 ]

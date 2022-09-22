@@ -9,17 +9,23 @@ $borderRadius: 5px;
   .link-number {
     @include linkNumber;
   }
-
+  .title {
+    display: flex;
+    align-items: center;
+    .line {
+      border-bottom: 1px solid grey;
+      width: 38%;
+      margin-left: 18px;
+      margin-top: 3px;
+    }
+  }
   .about-row {
     display: flex;
     justify-content: space-between;
     width: 60%;
     .about-text-warp {
-      color: $greyColor;
-      line-height: $lineHeight24;
+      @include section-text;
       max-width: 90%;
-      letter-spacing: 0.5px;
-      font-size: $font18;
       .about-text {
         margin-bottom: 30px;
       }
@@ -32,6 +38,7 @@ $borderRadius: 5px;
           margin: 10px 0;
           min-width: 130px;
           font-family: source_code;
+          font-size: $font14;
         }
         svg {
           color: $greenColor;
@@ -51,7 +58,7 @@ $borderRadius: 5px;
       .filter {
         @include wh300;
         position: absolute;
-        background-color: rgba(100, 255, 219, 0.52);
+        background-color: $purpleOpacity;
         z-index: 6;
         border-radius: $borderRadius;
         transition: all 0.5s;
@@ -63,6 +70,7 @@ $borderRadius: 5px;
           }
         }
       }
+
       .square {
         border-radius: $borderRadius;
         @include wh300;

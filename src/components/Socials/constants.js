@@ -20,7 +20,7 @@ export const socialsArr = [
     alt: 'facebook'
   },
   {
-    href: 'mailto:stephan@pwm.co.il',
+    href: 'mailto:stephanbncml@gmail.com',
     src: MAIL,
     alt: 'email'
   },

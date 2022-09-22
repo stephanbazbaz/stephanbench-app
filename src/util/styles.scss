@@ -1,14 +1,18 @@
-$greenColor: #64ffda;
+$greenColor: #d200ff;
+// $greenColor: #64ffda;
 $whiteColor: white;
 $transparentHover: #6262629c;
 $greyColor: #9d9d9d;
+$purpleOpacity: #d200ff73;
 
 //fonts
 $font50: 50px;
 $font20: 20px;
 $font23: 23px;
+$font26: 26px;
 $font18: 18px;
 $font16: 16px;
+$font14: 14px;
 
 $titleFont: clamp(40px, 5vw, 80px);
 @font-face {
@@ -19,14 +23,28 @@ $titleFont: clamp(40px, 5vw, 80px);
   font-family: quicksilver;
   src: url("../assets/Quicksand/Quicksand-VariableFont_wght.ttf");
 }
+@font-face {
+  font-family: quicksilver_bold;
+  src: url("../assets/Quicksand/static/Quicksand-Bold.ttf");
+}
 
 $paddingTopContainer: 80px;
 $lineHeight24: 24px;
+$lineHeight42: 42px;
+
 @mixin linkNumber {
   color: $greenColor;
   margin-right: 5px;
+  font-size: $font26;
 }
 @mixin wh300 {
   width: 300px;
   height: 300px;
+}
+
+@mixin section-text {
+  color: $greyColor;
+  line-height: $lineHeight24;
+  letter-spacing: 0.5px;
+  font-size: $font18;
 }

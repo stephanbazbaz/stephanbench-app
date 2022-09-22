@@ -5,17 +5,49 @@
   height: 100vh;
   color: $whiteColor;
   text-align: left;
+  width: 100%;
+  max-width: 850px;
+  margin: auto;
   .link-number {
     @include linkNumber;
   }
-  .experience-text {
-    max-width: 500px;
+  .line {
+    border-bottom: 1px solid grey;
+    width: 60%;
+    margin-left: 18px;
+    margin-top: 3px;
+  }
+  .experience-list-warp {
+    display: flex;
+  }
+
+  .tabs-container {
+    border-left: 1px solid $greyColor;
   }
   .tabs-indicator {
     right: unset;
     left: 0;
+    background-color: $greenColor;
+    width: 2px;
+    transition: all 0.3s ease;
   }
   .tab-btn {
     align-items: flex-start;
+    text-transform: capitalize;
+    color: $greyColor;
+    font-family: source_code;
+    transition: all 0.3s ease;
+    min-height: unset;
+    &:hover {
+      background-color: rgb(86 132 255 / 8%);
+      color: $greenColor;
+    }
+  }
+  .tabs-root .selected-tab {
+    color: $greenColor;
+    background-color: rgb(86 132 255 / 8%);
+  }
+  .MuiTouchRipple-root {
+    display: none;
   }
 }

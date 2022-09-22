@@ -11,10 +11,11 @@ const VerticalTabs = (props) => {
       onChange={handleChange}
       classes={{
         indicator: 'tabs-indicator',
-        root: 'tabs-root'
+        root: 'tabs-root',
+        flexContainer: 'tabs-container'
       }}
     >
-      {list.map((item, idx) => <Tab classes={{ root: 'tab-btn' }} key={`tab-${idx}`} label={item.label} />)}
+      {list.map((item, idx) => <Tab classes={{ root: 'tab-btn', selected: 'selected-tab' }} key={`tab-${idx}`} label={item.label} />)}
     </Tabs>
   );
 }

@@ -16,6 +16,7 @@
       }
       .svg-icon {
         fill: $greyColor;
+        width: 25px;
         &:hover {
           cursor: pointer;
           fill: $greenColor;

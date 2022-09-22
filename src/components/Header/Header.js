@@ -43,7 +43,7 @@ const Header = (props) => {
             onClick={scrollToHome}
             src="https://cdn.lordicon.com/gmzxduhd.json"
             trigger="hover"
-            colors="primary:#ffffff,secondary:#08a88a"
+            colors="primary:#ffffff,secondary:#d200ff"
             className='lord-icon'
             style={{ width: '60px', height: '60px', cursor: 'pointer' }}
           ></lord-icon>
