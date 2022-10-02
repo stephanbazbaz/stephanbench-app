@@ -2,6 +2,12 @@ import FACEBOOK from './assets/logos/facebook-f_1.svg'
 import GITHUB from './assets/logos/github_10.svg'
 import LINKDIN from './assets/logos/linkedin_6.svg'
 import MAIL from './assets/logos/mail-outline_1.svg'
+// import STUDIO_PIC from './assets/pics/studiobaz.png'
+// import TIMEOUT_PIC from './assets/pics/timeout_pic.jpeg'
+import SUPER_PIC from './assets/pics/supermarket.png'
+import VACATION_PIC from './assets/pics/vacation_pic.png'
+import DISCO_PIC from './assets/pics/disco_pic.png'
+
 export const socialsArr = [
   {
     href: 'https://www.linkedin.com/in/stephan-benchemoul-38879320b/',
@@ -19,7 +25,7 @@ export const socialsArr = [
     alt: 'facebook'
   },
   {
-    href: 'mailto:stephan@pwm.co.il',
+    href: 'mailto:stephanbncml@gmail.com',
     src: MAIL,
     alt: 'email'
   },
@@ -87,7 +93,10 @@ export const aboutObj = {
   myNameIs: 'Hi, my name is',
   fullName: 'Stephan Benchemoul.',
   profession: "Web Developer & Sound Designer.",
-  description: 'I build and design web applications using modern web technologies with a focus on responsiveness, accessibility and pleasing aesthetics .'
+  description: 'I build and design web applications using modern web technologies with a focus on responsiveness, accessibility and pleasing aesthetics .',
+  web: 'Web',
+  developer: 'Developer',
+  sound: '& Sound Designer'
 }
 export const experienceArr = [
   {
@@ -123,4 +132,51 @@ export const experienceArr = [
     title: 'Web Developer',
     link: 'https://www.moveo.group/'
   }
+]
+
+export const Projects = [
+  // { link: 'https://brave-sammet-525389.netlify.app/' },
+  // {
+  //   link: 'https://stephansupermarketapp.herokuapp.com/',
+  // },
+  // {
+  //   link: 'https://drnaomiheyman.com/',
+  // },
+  {
+    link: 'https://stephansupermarketapp.herokuapp.com/',
+    title: 'Super Market App',
+    text: 'Final project from my studies at Jhon bryce Academy. Full E-commerce website of a Vegan Supermarket.',
+    tech: ['React', 'Node.js', 'SQL', 'PostgreSQL', 'Heroku'],
+    pic: SUPER_PIC
+  },
+  {
+    link: 'https://stark-basin-64884.herokuapp.com/',
+    title: 'Vacations App',
+    text: 'Second project from my studies at Jhon bryce Academy emulating a vacation App where you can search & follow vacations. you can login to Admin to upload new vacations using admin username: adminadmin, password: admin1234.',
+    tech: ['React', 'Node.js', 'SQL', 'PostgreSQL', 'Heroku'],
+    pic: VACATION_PIC
+  },
+  {
+    link: 'https://brave-sammet-525389.netlify.app/',
+    title: 'MPC Disco Sequencer',
+    text: 'Virtual loop machine contaning disco sounds with option to record a session',
+    info: ['React', 'Netlify'],
+    pic: DISCO_PIC
+  },
+  // {
+  //   link: 'https://trommelmusic.com/music/tutorials/the-source-welcome-stephen-bazbaz-who-delivers-a-masterclass-on-pitch-modulation/',
+  //   title: 'Production Master Class',
+  //   text: 'Tutorial i made for Trommel magazine on some tips and tricks how to produce interesting sounds',
+  //   linkText: 'Read More..',
+  //   pic: STUDIO_PIC,
+  //   isWebsite: false
+  // },
+  // {
+  //   link: 'https://timeout.co.il/%D7%98%D7%99%D7%95%D7%9F-%D7%90%D7%99%D7%9F-%D7%A1%D7%98%D7%A4%D7%9F-%D7%91%D7%96%D7%91%D7%96/',
+  //   title: 'Interview for Timeout Magazine',
+  //   text: 'Some words about my life as a producer and my new passion for code',
+  //   linkText: 'Read More..',
+  //   pic: TIMEOUT_PIC,
+  //   isWebsite:false
+  // }
 ]

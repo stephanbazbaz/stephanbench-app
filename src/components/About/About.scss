@@ -2,7 +2,7 @@
 $borderRadius: 5px;
 .About {
   padding-top: $paddingTopContainer;
-  height: 100vh;
+  // height: 100vh;
   color: $whiteColor;
   text-align: left;
 
@@ -41,7 +41,7 @@ $borderRadius: 5px;
           font-size: $font14;
         }
         svg {
-          color: $greenColor;
+          color: $purpleColor;
           margin-right: 5px;
         }
       }
@@ -74,7 +74,7 @@ $borderRadius: 5px;
       .square {
         border-radius: $borderRadius;
         @include wh300;
-        border: 1px solid $greenColor;
+        border: 1px solid $purpleColor;
         position: absolute;
         left: 30px;
         top: 30px;

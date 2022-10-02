@@ -1,0 +1,86 @@
+@import "./util/styles.scss";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  // background-color: #000000;
+  font-family: quicksilver;
+  background: url("./assets/pics/black_back.jpeg") repeat;
+}
+
+.dark-mode {
+  // background-color: color(#ffeeff);
+  background: color(#ffeeff);
+  color: $colorBlack;
+  .Experience {
+    .title {
+      color: $colorBlack;
+    }
+  }
+
+  .ProjectCard .section-txt h3 {
+    color: $colorBlack;
+  }
+  .experience-title {
+    color: $colorBlack;
+  }
+  .title {
+    color: $colorBlack !important;
+  }
+
+  .resume-btn a {
+    color: $colorBlack !important;
+  }
+  .Header {
+    background-color: #f8dff5;
+
+    .navbar {
+      .link-to {
+        color: $colorBlack;
+      }
+    }
+  }
+  .Home .full-name,
+  .description {
+    color: $colorBlack !important;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace, "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
+    system-ui, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.title {
+  font-family: "source_code";
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.on-flex {
+  display: flex;
+}

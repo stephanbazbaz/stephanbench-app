@@ -11,14 +11,20 @@
   font-family: source_code;
   padding: 0px 50px 0 43px;
   background-color: #131313;
+  // background-color: #131313;
   position: sticky;
   top: 0;
   z-index: 10;
   height: 60px;
   .navbar {
     justify-content: space-between;
+    .right-nav {
+      svg {
+        cursor: pointer;
+      }
+    }
     .link-number {
-      color: $greenColor;
+      color: $purpleColor;
       margin-right: 5px;
     }
     .link-to {
@@ -26,7 +32,7 @@
       text-decoration: none;
       cursor: pointer;
       &:hover {
-        color: $greenColor;
+        color: $purpleColor;
       }
     }
     .logo-img {
@@ -38,7 +44,7 @@
     .resume-btn {
       color: #64ffda;
       background-color: transparent;
-      border: 1px solid $greenColor;
+      border: 1px solid $purpleColor;
       padding: 6px 13px;
       border-radius: 3px;
       margin-left: 25px;

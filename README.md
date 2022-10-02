@@ -8,6 +8,8 @@ In the project directory, you can run:
 
 ### `npx generate-react-cli component 'name'`
 
+### `npx generate-react-cli component 'name' --type=common`
+
 creates new component directory
 
 ### `npm start`

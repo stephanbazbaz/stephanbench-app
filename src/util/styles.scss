@@ -1,10 +1,16 @@
-$greenColor: #d200ff;
-// $greenColor: #64ffda;
+$purpleColor: #d200ff;
+// $purpleColor: #64ffda;
 $whiteColor: white;
 $transparentHover: #6262629c;
 $greyColor: #9d9d9d;
 $purpleOpacity: #d200ff73;
+$greyBlack: #131313;
+$colorBlack: black;
 
+@function color($color) {
+  $remSize: $color;
+  @return $remSize;
+}
 //fonts
 $font50: 50px;
 $font20: 20px;
@@ -33,7 +39,7 @@ $lineHeight24: 24px;
 $lineHeight42: 42px;
 
 @mixin linkNumber {
-  color: $greenColor;
+  color: $purpleColor;
   margin-right: 5px;
   font-size: $font26;
 }
@@ -47,4 +53,40 @@ $lineHeight42: 42px;
   line-height: $lineHeight24;
   letter-spacing: 0.5px;
   font-size: $font18;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+@mixin hover_line {
+  .label {
+    color: $purpleColor;
+    position: relative;
+    cursor: pointer;
+    a {
+      color: $purpleColor;
+      text-decoration: none;
+    }
+  }
+  .label:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    width: 0;
+    bottom: -5px;
+    background: $purpleColor;
+    height: 1px;
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
+  .label:hover:after,
+  .label:focus:after,
+  .label:active:after {
+    left: 7px;
+    right: auto;
+    width: 95%;
+  }
 }

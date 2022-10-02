@@ -1,0 +1,86 @@
+@import "../../../util/styles.scss";
+
+.right {
+  justify-content: left;
+  .image-container {
+    left: unset !important;
+    right: 0;
+  }
+  .section-txt {
+    text-align: left !important;
+    .tech-row {
+      justify-content: left !important;
+    }
+  }
+}
+.left {
+  justify-content: right;
+}
+
+.ProjectCard {
+  min-height: 350px;
+  h5 {
+    color: $purpleColor;
+  }
+  .image-container {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    .image-warp {
+      img {
+        width: 100%;
+        height: 300px;
+      }
+    }
+    .filter {
+      background-color: rgb(246 0 255 / 49%);
+      position: absolute;
+      top: 0;
+      bottom: 4px;
+      width: 100%;
+      transition: all 0.5s ease;
+      &:hover {
+        cursor: pointer;
+        background-color: transparent;
+      }
+    }
+  }
+  .section-txt {
+    text-align: right;
+    @include section-text;
+    .tech-row {
+      display: flex;
+      justify-content: right;
+      gap: 10px;
+      font-family: "source_code";
+      font-size: $font14;
+      color: grey;
+    }
+    svg {
+      color: $greyColor;
+      transition: all 0.8 ease;
+      &:hover {
+        color: $purpleColor;
+      }
+    }
+    h3 {
+      color: white;
+    }
+    .txt {
+      font-family: sans-serif;
+      font-weight: 400;
+      padding: 20px 20px 20px 10px;
+      background-color: $greyBlack;
+      width: 530px;
+      position: relative;
+      box-shadow: 0 10px 30px -5px black;
+      border-radius: 5px;
+    }
+    font-weight: 900;
+    a {
+      text-decoration: none;
+      color: $purpleColor;
+      font-family: source_code;
+    }
+  }
+}

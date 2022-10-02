@@ -11,35 +11,36 @@
   .experience-title {
     line-height: $lineHeight42;
     font-size: $font23;
-    .label {
-      color: $greenColor;
-      position: relative;
-      cursor: pointer;
-      a {
-        color: $greenColor;
-        text-decoration: none;
-      }
-    }
-    .label:after {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      right: 0;
-      width: 0;
-      bottom: -5px;
-      background: $greenColor;
-      height: 1px;
-      transition-property: width;
-      transition-duration: 0.3s;
-      transition-timing-function: ease-out;
-    }
-    .label:hover:after,
-    .label:focus:after,
-    .label:active:after {
-      left: 7px;
-      right: auto;
-      width: 95%;
-    }
+    @include hover_line;
+    // .label {
+    //   color: $purpleColor;
+    //   position: relative;
+    //   cursor: pointer;
+    //   a {
+    //     color: $purpleColor;
+    //     text-decoration: none;
+    //   }
+    // }
+    // .label:after {
+    //   content: "";
+    //   position: absolute;
+    //   z-index: -1;
+    //   right: 0;
+    //   width: 0;
+    //   bottom: -5px;
+    //   background: $purpleColor;
+    //   height: 1px;
+    //   transition-property: width;
+    //   transition-duration: 0.3s;
+    //   transition-timing-function: ease-out;
+    // }
+    // .label:hover:after,
+    // .label:focus:after,
+    // .label:active:after {
+    //   left: 7px;
+    //   right: auto;
+    //   width: 95%;
+    // }
   }
   .period {
     font-family: source_code;
@@ -56,7 +57,7 @@
         line-height: $lineHeight24;
       }
       svg {
-        color: $greenColor;
+        color: $purpleColor;
       }
     }
   }
