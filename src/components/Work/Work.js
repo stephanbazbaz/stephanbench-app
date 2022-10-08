@@ -23,6 +23,7 @@ const Work = (props) => {
             linkText={item.linkText}
             tech={item.tech}
           />
+          <div className='bottom-line'></div>
         </div>
       )}
 

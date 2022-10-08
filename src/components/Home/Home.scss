@@ -9,6 +9,7 @@
   padding: 0 10px;
   @media only screen and (max-width: 376px) {
     text-align: center;
+    height: 100vh;
   }
   .my-name-is {
     color: $purpleColor;
@@ -19,6 +20,9 @@
     font-size: $titleFont;
     line-height: 1.5;
     font-family: quicksilver_bold;
+    @media only screen and (max-width: 376px) {
+      font-size: $font35;
+    }
   }
   .full-name {
     color: $whiteColor;

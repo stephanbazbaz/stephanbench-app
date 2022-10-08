@@ -2,12 +2,12 @@
 $borderRadius: 5px;
 .About {
   padding-top: $paddingTopContainer;
-  // height: 100vh;
   color: $whiteColor;
   text-align: left;
   @media only screen and (max-width: 376px) {
     text-align: center;
     padding: $mobilePaddingTopContainer;
+    // height: 100vh;
   }
   .link-number {
     @include linkNumber;
@@ -84,8 +84,8 @@ $borderRadius: 5px;
         &:hover {
           background-color: #64ffdb00;
           + .square {
-            left: 15px;
-            top: 15px;
+            left: $font15;
+            top: $font15;
 
             @media only screen and (max-width: 376px) {
               left: 5px;
@@ -112,8 +112,8 @@ $borderRadius: 5px;
           @include wh200;
         }
         .square {
-          left: 15px;
-          top: 15px;
+          left: $font15;
+          top: $font15;
         }
       }
     }

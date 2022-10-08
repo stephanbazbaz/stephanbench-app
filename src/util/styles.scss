@@ -1,5 +1,4 @@
 $purpleColor: #d200ff;
-// $purpleColor: #64ffda;
 $whiteColor: white;
 $transparentHover: #6262629c;
 $greyColor: #9d9d9d;
@@ -13,12 +12,15 @@ $colorBlack: black;
 }
 //fonts
 $font50: 50px;
+$font35: 35px;
 $font20: 20px;
 $font23: 23px;
 $font26: 26px;
+$font20: 20px;
 $font18: 18px;
 $font16: 16px;
 $font14: 14px;
+$font15: 15px;
 
 $titleFont: clamp(40px, 5vw, 80px);
 @font-face {
@@ -35,7 +37,7 @@ $titleFont: clamp(40px, 5vw, 80px);
 }
 
 $paddingTopContainer: 80px;
-$mobilePaddingTopContainer: 80px 10px 0px;
+$mobilePaddingTopContainer: 20px 10px 0px;
 $lineHeight24: 24px;
 $lineHeight42: 42px;
 
@@ -43,6 +45,9 @@ $lineHeight42: 42px;
   color: $purpleColor;
   margin-right: 5px;
   font-size: $font26;
+  @media only screen and (max-width: 376px) {
+    font-size: $font18;
+  }
 }
 
 @mixin wh300 {
