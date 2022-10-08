@@ -77,12 +77,12 @@ export const technologiesArr = [
 export const isMobile = () => window.innerWidth < 376
 export const aosFadeUpLeft = {
   // 'data-aos-once': true,
-  'data-aos': !isMobile ? "fade-up-left" : "fade-up",
+  'data-aos': "fade-up-left",
   'data-aos-anchor-placement': "top-center"
 }
 export const aosFadeUpRight = {
   // 'data-aos-once': true,
-  'data-aos': !isMobile ? "fade-up-right" : "fade-up",
+  'data-aos': "fade-up-right",
   'data-aos-anchor-placement': "top-center"
 }
 export const aosFadeUpUp = {
@@ -136,13 +136,6 @@ export const experienceArr = [
 ]
 
 export const Projects = [
-  // { link: 'https://brave-sammet-525389.netlify.app/' },
-  // {
-  //   link: 'https://stephansupermarketapp.herokuapp.com/',
-  // },
-  // {
-  //   link: 'https://drnaomiheyman.com/',
-  // },
   {
     link: 'https://stephansupermarketapp.herokuapp.com/',
     title: 'Super Market App',
