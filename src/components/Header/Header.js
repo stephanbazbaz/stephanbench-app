@@ -9,9 +9,9 @@ const Header = (props) => {
   const { refObj, linkArr, closeModal } = props
 
   const scrollToHome = () => refObj.homeRef.current.scrollIntoView(false)
-  const scrollToElement = ref => {
-    closeModal()
+  const scrollToElement = (ref) => {
     ref.current.scrollIntoView()
+    closeModal()
   }
   const [state, setState] = useState({
     toggleNav: '',
