@@ -10,3 +10,13 @@
   max-width: 1200px;
   padding: 0 0 0 100px;
 }
+
+.blur {
+  filter: blur(5px) brightness(0.7);
+}
+
+@media only screen and (max-width: 376px) {
+  .wrapper {
+    padding: 0 10px;
+  }
+}

@@ -74,13 +74,23 @@ p {
   font-family: "source_code";
   text-align: left;
   margin-bottom: 20px;
+  max-width: 100%;
 }
 
+@media only screen and (max-width: 376px) {
+  .title {
+    font-size: 14px;
+  }
+}
 .flex {
   display: flex;
   align-items: center;
 }
-
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .on-flex {
   display: flex;
 }

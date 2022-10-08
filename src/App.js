@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 import './App.css';
 import Header from './components/Header'
 import Home from './components/Home'
@@ -7,7 +7,11 @@ import Work from './components/Work'
 import Experience from './components/Experience'
 import Contact from './components/Contact'
 import Socials from './components/Socials'
+import MobileHeader from './components/MobileHeader/MobileHeader';
+import cx from 'classnames'
+
 function App() {
+  const [isBlur, setIsBlur] = useState(false)
   const refObj = {
     workRef: useRef(null),
     experienceRef: useRef(null),
@@ -40,7 +44,8 @@ function App() {
   return (
     <div className="App">
       <Header refObj={refObj} linkArr={linkArr} />
-      <div className='wrapper'>
+      <MobileHeader refObj={refObj} linkArr={linkArr} setIsBlur={setIsBlur} />
+      <div className={cx('wrapper', { blur: isBlur })}>
         <Home myRef={refObj.homeRef} />
         <About linkArr={linkArr} />
         <Experience linkArr={linkArr} />

@@ -11,13 +11,17 @@
   font-family: source_code;
   padding: 0px 50px 0 43px;
   background-color: #131313;
-  // background-color: #131313;
   position: sticky;
   top: 0;
   z-index: 10;
   height: 60px;
   .navbar {
     justify-content: space-between;
+    .left-nav {
+      @media only screen and (max-width: 376px) {
+        display: none;
+      }
+    }
     .right-nav {
       svg {
         cursor: pointer;
@@ -26,6 +30,9 @@
     .link-number {
       color: $purpleColor;
       margin-right: 5px;
+      @media only screen and (max-width: 376px) {
+        margin: 0;
+      }
     }
     .link-to {
       color: $whiteColor;
@@ -48,6 +55,9 @@
       padding: 6px 13px;
       border-radius: 3px;
       margin-left: 25px;
+      @media only screen and (max-width: 376px) {
+        margin: 0;
+      }
       a {
         text-decoration: none;
         color: $whiteColor;
@@ -57,5 +67,11 @@
         cursor: pointer;
       }
     }
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .Header {
+    display: none;
   }
 }

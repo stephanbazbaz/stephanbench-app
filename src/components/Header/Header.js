@@ -6,10 +6,13 @@ import LightModeIcon from '@mui/icons-material/LightMode';
 import Tooltip from '@mui/material/Tooltip';
 
 const Header = (props) => {
-  const { refObj, linkArr } = props
+  const { refObj, linkArr, closeModal } = props
 
   const scrollToHome = () => refObj.homeRef.current.scrollIntoView(false)
-  const scrollToElement = ref => ref.current.scrollIntoView()
+  const scrollToElement = ref => {
+    closeModal()
+    ref.current.scrollIntoView()
+  }
   const [state, setState] = useState({
     toggleNav: '',
     direction: 0,

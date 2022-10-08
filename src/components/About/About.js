@@ -3,7 +3,14 @@ import MYIMG from '../../assets/pics/1641275635181.jpeg'
 import AOS from "aos";
 import "aos/dist/aos.css";
 import PlayArrowOutlinedIcon from '@mui/icons-material/PlayArrowOutlined';
-import { aosConfig, techText, aboutText, technologiesArr, aosFadeUpLeft, aosFadeUpRight } from '../../constants';
+import {
+  aosConfig,
+  techText,
+  aboutText,
+  technologiesArr,
+  aosFadeUpLeft,
+  aosFadeUpRight
+} from '../../constants';
 AOS.init(aosConfig)
 const About = (props) => {
   const { linkArr } = props
@@ -33,7 +40,7 @@ const About = (props) => {
           <div className='square'></div>
         </div>
       </div>
-    </div>
+    </div >
   )
 }
 

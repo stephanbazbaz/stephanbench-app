@@ -1,6 +1,9 @@
 @import "../../util/styles.scss";
 
 .Socials {
+  @media only screen and (max-width: 376px) {
+    display: none;
+  }
   .logo-row {
     position: fixed;
     bottom: 0;

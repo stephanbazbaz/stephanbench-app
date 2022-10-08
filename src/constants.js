@@ -74,14 +74,15 @@ export const technologiesArr = [
   'Figma',
   'Wordpress'
 ]
+export const isMobile = () => window.innerWidth < 376
 export const aosFadeUpLeft = {
   // 'data-aos-once': true,
-  'data-aos': "fade-up-left",
+  'data-aos': !isMobile ? "fade-up-left" : "fade-up",
   'data-aos-anchor-placement': "top-center"
 }
 export const aosFadeUpRight = {
   // 'data-aos-once': true,
-  'data-aos': "fade-up-right",
+  'data-aos': !isMobile ? "fade-up-right" : "fade-up",
   'data-aos-anchor-placement': "top-center"
 }
 export const aosFadeUpUp = {

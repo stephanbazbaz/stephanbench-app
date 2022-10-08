@@ -5,7 +5,11 @@
   text-align: left;
   padding-top: 30px;
   scroll-margin-top: 80px;
-
+  box-sizing: border-box;
+  padding: 0 10px;
+  @media only screen and (max-width: 376px) {
+    text-align: center;
+  }
   .my-name-is {
     color: $purpleColor;
     font-family: source_code;

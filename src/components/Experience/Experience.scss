@@ -42,6 +42,10 @@
       background-color: rgb(86 132 255 / 8%);
       color: $purpleColor;
     }
+    @media only screen and (max-width: 376px) {
+      font-size: 10px;
+      text-align: left;
+    }
   }
   .tabs-root .selected-tab {
     color: $purpleColor;
