@@ -1,5 +1,4 @@
 import React from 'react'
-import { aosFadeUpUp } from '../../../constants'
 import './SectionTitle.scss'
 const SectionTitle = (props) => {
   const { number, to, fadeConfig } = props

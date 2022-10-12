@@ -1,6 +1,7 @@
 @import "../../../util/styles.scss";
 
 .title {
+  box-sizing: border-box;
   font-family: "source_code";
   text-align: left;
   margin-bottom: 20px;
