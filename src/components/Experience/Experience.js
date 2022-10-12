@@ -4,6 +4,7 @@ import "aos/dist/aos.css"
 import VerticalTabs from '../common/VerticalTabs'
 import { experienceArr, aosFadeUpUp, aosConfig2 } from '../../constants'
 import WorkDetails from '../common/WorkDetails/WorkDetails'
+import SectionTitle from '../common/SectionTitle/SectionTitle'
 
 AOS.init(aosConfig2)
 const Experience = (props) => {
@@ -20,11 +21,10 @@ const Experience = (props) => {
   }
   return (
     <div className='Experience' ref={linkArr[1].ref}>
-      <h1 className='title flex' {...aosFadeUpUp} >
-        <span className='link-number'>{linkArr[1].number}</span>
-        {linkArr[1].to}
-        <div className='line'></div>
-      </h1>
+      <SectionTitle
+        number={linkArr[1].number}
+        to={linkArr[1].to}
+        fadeConfig={aosFadeUpUp} />
       <div>
         <div className='experience-list-warp' {...aosFadeUpUp}>
           <VerticalTabs

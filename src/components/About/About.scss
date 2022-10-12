@@ -4,26 +4,18 @@ $borderRadius: 5px;
   padding-top: $paddingTopContainer;
   color: $whiteColor;
   text-align: left;
+  height: 100vh;
+
   @media only screen and (max-width: 376px) {
     text-align: center;
     padding: $mobilePaddingTopContainer;
-    // height: 100vh;
   }
   .link-number {
     @include linkNumber;
   }
   .title {
-    display: flex;
-    align-items: center;
-    @media only screen and (max-width: 376px) {
-      justify-content: center;
-    }
-
     .line {
-      border-bottom: 1px solid grey;
-      width: 38%;
-      margin-left: 18px;
-      margin-top: 3px;
+      max-width: 40%;
     }
   }
   .about-row {

@@ -1,0 +1,20 @@
+@import "../../../util/styles.scss";
+
+.link-warp {
+  margin: 0 7px;
+  .link-number {
+    color: $purpleColor;
+    margin-right: 5px;
+    @media only screen and (max-width: 376px) {
+      margin: 0;
+    }
+  }
+  .link-to {
+    color: $whiteColor;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+      color: $purpleColor;
+    }
+  }
+}

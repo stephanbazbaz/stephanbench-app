@@ -76,17 +76,17 @@ export const technologiesArr = [
 ]
 export const isMobile = () => window.innerWidth < 376
 export const aosFadeUpLeft = {
-  // 'data-aos-once': true,
+  'data-aos-once': true,
   'data-aos': "fade-up-left",
   'data-aos-anchor-placement': "top-center"
 }
 export const aosFadeUpRight = {
-  // 'data-aos-once': true,
+  'data-aos-once': true,
   'data-aos': "fade-up-right",
   'data-aos-anchor-placement': "top-center"
 }
 export const aosFadeUpUp = {
-  // 'data-aos-once': true,
+  'data-aos-once': true,
   'data-aos': "fade-up",
   'data-aos-anchor-placement': "top-center"
 }
@@ -174,3 +174,10 @@ export const Projects = [
   //   isWebsite:false
   // }
 ]
+
+export const homeIconObj = {
+  src: "https://cdn.lordicon.com/gmzxduhd.json",
+  trigger: "hover",
+  className: 'lord-icon',
+  style: { width: '60px', height: '60px', cursor: 'pointer' }
+}

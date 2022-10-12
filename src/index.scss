@@ -70,18 +70,18 @@ p {
   margin: 0;
 }
 
-.title {
-  font-family: "source_code";
-  text-align: left;
-  margin-bottom: 20px;
-  max-width: 100%;
-}
+// .title {
+//   font-family: "source_code";
+//   text-align: left;
+//   margin-bottom: 20px;
+//   max-width: 100%;
+// }
 
-@media only screen and (max-width: 376px) {
-  .title {
-    font-size: $font20;
-  }
-}
+// @media only screen and (max-width: 376px) {
+//   .title {
+//     font-size: $font20;
+//   }
+// }
 .flex {
   display: flex;
   align-items: center;

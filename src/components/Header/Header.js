@@ -4,14 +4,15 @@ import MyBtn from '../common/MyBtn/MyBtn'
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import Tooltip from '@mui/material/Tooltip';
+import NavLink from '../common/NavLink/NavLink';
+import { homeIconObj } from '../../constants';
 
 const Header = (props) => {
-  const { refObj, linkArr, closeModal } = props
+  const { refObj, linkArr } = props
 
   const scrollToHome = () => refObj.homeRef.current.scrollIntoView(false)
   const scrollToElement = (ref) => {
     ref.current.scrollIntoView()
-    closeModal()
   }
   const [state, setState] = useState({
     toggleNav: '',
@@ -56,18 +57,14 @@ const Header = (props) => {
         <div className='left-nav'>
           <lord-icon
             onClick={scrollToHome}
-            src="https://cdn.lordicon.com/gmzxduhd.json"
-            trigger="hover"
             colors={`primary:${state.color},secondary:#d200ff`}
-            className='lord-icon'
-            style={{ width: '60px', height: '60px', cursor: 'pointer' }}
+            {...homeIconObj}
           ></lord-icon>
         </div>
         <div className='right-nav flex'>
           {linkArr.map((item, idx) =>
-            <div className='link-warp flex' key={idx}>
-              <div className='link-number'>{item.number}</div>
-              <div className='link-to' onClick={() => scrollToElement(item.ref)} >{item.to}</div>
+            <div key={idx}>
+              <NavLink number={item.number} text={item.to} handleClick={() => scrollToElement(item.ref)} />
             </div>
           )}
           <MyBtn text='Resume' link={RESUME} />

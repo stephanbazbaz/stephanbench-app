@@ -7,7 +7,12 @@
   text-align: center;
   height: 100vh;
   box-sizing: border-box;
-
+  .title {
+    justify-content: center;
+    .line {
+      display: none;
+    }
+  }
   @media only screen and (max-width: 376px) {
     padding: $mobilePaddingTopContainer;
   }

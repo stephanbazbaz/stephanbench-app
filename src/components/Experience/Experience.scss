@@ -5,24 +5,20 @@
   color: $whiteColor;
   text-align: left;
   width: 100%;
-  max-width: 850px;
+  max-width: 900px;
   margin: auto;
+  height: 100vh;
+
   @media only screen and (max-width: 376px) {
     height: 100vh;
   }
   .link-number {
     @include linkNumber;
   }
-  .line {
-    border-bottom: 1px solid grey;
-    width: 60%;
-    margin-left: 18px;
-    margin-top: 3px;
-  }
+
   .experience-list-warp {
     display: flex;
   }
-
   .tabs-container {
     border-left: 1px solid $greyColor;
   }
@@ -50,9 +46,13 @@
       text-align: left;
     }
   }
-  .tabs-root .selected-tab {
-    color: $purpleColor;
-    background-color: rgb(86 132 255 / 8%);
+  .tabs-root {
+    width: 20%;
+
+    .selected-tab {
+      color: $purpleColor;
+      background-color: rgb(86 132 255 / 8%);
+    }
   }
   .MuiTouchRipple-root {
     display: none;

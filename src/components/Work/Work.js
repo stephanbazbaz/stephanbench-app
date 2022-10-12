@@ -1,17 +1,15 @@
 import React from 'react'
-import AOS from "aos"
-import { aosConfig, Projects, aosFadeUpUp } from '../../constants';
+import { Projects, aosFadeUpUp } from '../../constants';
 import ProjectCard from '../common/ProjectCard/ProjectCard';
-AOS.init(aosConfig);
+import SectionTitle from '../common/SectionTitle/SectionTitle';
 const Work = (props) => {
   const { linkArr } = props
   return (
     <div ref={linkArr[2].ref} className='Work' >
-      <h1 className='title flex'  {...aosFadeUpUp}>
-        <span className='link-number'>{linkArr[2].number}</span>
-        Some Things I’ve Built
-        <div className='line'></div>
-      </h1>
+      <SectionTitle
+        number={linkArr[2].number}
+        to='Some Things I’ve Built'
+        fadeConfig={aosFadeUpUp} />
       {Projects.map((item, idx) =>
         <div key={idx} className='card-container'>
           <ProjectCard
@@ -23,7 +21,7 @@ const Work = (props) => {
             linkText={item.linkText}
             tech={item.tech}
           />
-          <div className='bottom-line'></div>
+          <div className='bottom-line'  {...aosFadeUpUp}></div>
         </div>
       )}
 

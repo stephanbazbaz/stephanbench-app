@@ -1,17 +1,18 @@
 import React from 'react'
-import AOS from "aos";
-import { aosConfig, aosFadeUpUp, socialsArr } from '../../constants';
+import {
+  aosFadeUpUp, socialsArr
+} from '../../constants';
 import MyBtn from '../common/MyBtn/MyBtn';
-
-AOS.init(aosConfig);
+import SectionTitle from '../common/SectionTitle/SectionTitle';
 const Contact = (props) => {
   const { linkArr } = props
   const contactText = 'I’m always looking for any new opportunities so feel free to email me,\n\rWhether you have a question or just want to say hi\n\rand I’ll get back to you shortly :)'
   return (
     <div className='Contact' ref={linkArr[3].ref}>
-      <h1 className='title' {...aosFadeUpUp}>
-        <span className='link-number'>{linkArr[3].number}</span>{linkArr[3].to}
-      </h1>
+      <SectionTitle
+        number={linkArr[3].number}
+        to={linkArr[3].to}
+        fadeConfig={aosFadeUpUp} />
       <div {...aosFadeUpUp}>
         <p>{contactText}</p>
         <MyBtn text='Say Hello' link={socialsArr[3].href} />

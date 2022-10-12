@@ -9,7 +9,11 @@
   @media only screen and (max-width: 376px) {
     padding: $mobilePaddingTopContainer;
   }
-
+  .title {
+    .flex {
+      width: 100%;
+    }
+  }
   .card-container {
     padding-bottom: 100px;
     position: relative;
