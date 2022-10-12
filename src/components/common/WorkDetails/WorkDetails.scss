@@ -9,7 +9,7 @@
 .Experience .experience-details {
   width: 80%;
   margin-left: 30px;
-  @media only screen and (max-width: 376px) {
+  @media only screen and (max-width: $screenMobile) {
     margin-left: 5px;
   }
 
@@ -18,7 +18,7 @@
     font-size: $font23;
     @include hover_line;
 
-    @media only screen and (max-width: 376px) {
+    @media only screen and (max-width: $screenMobile) {
       font-size: $font15;
     }
   }
@@ -26,14 +26,14 @@
     font-family: source_code;
     font-size: $font16;
     color: $greyColor;
-    @media only screen and (max-width: 376px) {
+    @media only screen and (max-width: $screenMobile) {
       font-size: $font15;
     }
   }
   .description-warp {
     max-width: 650px;
 
-    @media only screen and (max-width: 376px) {
+    @media only screen and (max-width: $screenMobile) {
       max-width: 250px;
     }
     .description-row {
@@ -42,7 +42,7 @@
       color: $greyColor;
       .description-text {
         line-height: $lineHeight24;
-        @media only screen and (max-width: 376px) {
+        @media only screen and (max-width: $screenMobile) {
           line-height: 19px;
           font-size: $font14;
         }

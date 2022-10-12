@@ -13,16 +13,16 @@ import {
 import SectionTitle from '../common/SectionTitle/SectionTitle';
 const About = (props) => {
   const { linkArr } = props
-  const left = window.innerWidth < 376 ? { ...aosFadeUpUp } : { ...aosFadeUpLeft }
-  const right = window.innerWidth < 376 ? { ...aosFadeUpUp } : { ...aosFadeUpRight }
+  const left = window.innerWidth < 391 ? { ...aosFadeUpUp } : { ...aosFadeUpLeft }
+  const right = window.innerWidth < 391 ? { ...aosFadeUpUp } : { ...aosFadeUpRight }
   return (
-    <div className='About' ref={linkArr[0].ref}>
+    <div className='About' ref={linkArr[0].ref} {...right}>
       <SectionTitle
         number={linkArr[0].number}
         to={linkArr[0].to}
         fadeConfig={left} />
-      <div className='about-row'>
-        <div className='about-text-warp' {...right}>
+      <div className='about-row' >
+        <div className='about-text-warp'>
           <p className='about-text' >{aboutText} <br />
           </p>
           <p className='about-text'>{techText}</p>
@@ -34,7 +34,7 @@ const About = (props) => {
               </div>)}
           </div>
         </div>
-        <div className='img-warp' {...left}>
+        <div className='img-warp'>
           <img alt='stephan benchemoul web developer' className='my-pic' src={MYIMG} />
           <div className='filter'></div>
           <div className='square'></div>

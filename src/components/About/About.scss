@@ -6,10 +6,6 @@ $borderRadius: 5px;
   text-align: left;
   height: 100vh;
 
-  @media only screen and (max-width: 376px) {
-    text-align: center;
-    padding: $mobilePaddingTopContainer;
-  }
   .link-number {
     @include linkNumber;
   }
@@ -21,11 +17,14 @@ $borderRadius: 5px;
   .about-row {
     display: flex;
     justify-content: space-between;
-    width: 60%;
-    @media only screen and (max-width: 376px) {
+    width: 67%;
+    @media only screen and (max-width: $screenMobile) {
       width: 100%;
       flex-direction: column;
       align-items: center;
+      background: #1a1a1a;
+      padding: 10px 0 30px;
+      border-radius: 5px;
     }
     .about-text-warp {
       @include section-text;
@@ -59,7 +58,7 @@ $borderRadius: 5px;
         z-index: 4;
         position: absolute;
         border-radius: $borderRadius;
-        @media only screen and (max-width: 376px) {
+        @media only screen and (max-width: $screenMobile) {
           position: relative;
         }
       }
@@ -70,7 +69,7 @@ $borderRadius: 5px;
         z-index: 6;
         border-radius: $borderRadius;
         transition: all 0.5s;
-        @media only screen and (max-width: 376px) {
+        @media only screen and (max-width: $screenMobile) {
           top: 0;
         }
         &:hover {
@@ -79,7 +78,7 @@ $borderRadius: 5px;
             left: $font15;
             top: $font15;
 
-            @media only screen and (max-width: 376px) {
+            @media only screen and (max-width: $screenMobile) {
               left: 5px;
               top: 5px;
             }
@@ -97,7 +96,7 @@ $borderRadius: 5px;
         z-index: 0;
         transition: all 0.5s;
       }
-      @media only screen and (max-width: 376px) {
+      @media only screen and (max-width: $screenMobile) {
         .my-pic,
         .filter,
         .square {
@@ -108,6 +107,26 @@ $borderRadius: 5px;
           top: $font15;
         }
       }
+    }
+  }
+}
+@media only screen and (max-width: $screenMobile) {
+  .About {
+    padding: $mobilePaddingTopContainer;
+    height: unset;
+    .title {
+      .line {
+        max-width: 100%;
+      }
+    }
+  }
+}
+@media (max-width: 1920px) and (min-width: 1281px) {
+  .About {
+    width: 80%;
+    margin: auto;
+    .about-row {
+      width: 80%;
     }
   }
 }

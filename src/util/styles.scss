@@ -23,6 +23,9 @@ $font14: 14px;
 $font15: 15px;
 
 $titleFont: clamp(40px, 5vw, 80px);
+
+$screenMobile: 390px;
+
 @font-face {
   font-family: source_code;
   src: url("../assets/Source_Code_Pro/SourceCodePro-VariableFont_wght.ttf");
@@ -45,7 +48,7 @@ $lineHeight42: 42px;
   color: $purpleColor;
   margin-right: 5px;
   font-size: $font26;
-  @media only screen and (max-width: 376px) {
+  @media only screen and (max-width: $screenMobile) {
     font-size: $font18;
   }
 }

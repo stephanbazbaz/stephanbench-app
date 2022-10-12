@@ -1,0 +1,28 @@
+@import "../../util/styles.scss";
+
+.Footer {
+  display: none;
+  .footer-txt {
+    color: $greyColor;
+    font-size: $font18;
+  }
+}
+@media only screen and (max-width: $screenMobile) {
+  .Footer {
+    display: block;
+    .Socials {
+      display: block;
+      .logo-row {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 10%;
+        position: relative;
+        left: unset;
+      }
+      .dVLQAC {
+        display: none;
+      }
+    }
+  }
+}

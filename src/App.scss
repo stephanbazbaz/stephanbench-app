@@ -1,24 +1,24 @@
+@import "./util/styles.scss";
+
 .App {
   text-align: center;
 }
 
 .wrapper {
-  /* width: 100%; */
+  width: 100%;
   margin: 30px auto 0;
   overflow-y: scroll;
   box-sizing: border-box;
-  /* max-width: 1200px; */
-  /* padding: 0 0 0 100px; */
   max-width: 80%;
-
 }
 
 .blur {
   filter: blur(5px) brightness(0.7);
 }
 
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: $screenMobile) {
   .wrapper {
-    padding: 0 10px;
+    padding: 0 10px 100px;
+    max-width: 100%;
   }
 }

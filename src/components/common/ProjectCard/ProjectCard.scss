@@ -19,20 +19,28 @@
 
 .ProjectCard {
   min-height: 350px;
+  box-sizing: border-box;
 
-  @media only screen and (max-width: 376px) {
+  @media only screen and (max-width: $screenMobile) {
     justify-content: center;
     min-height: unset;
     flex-direction: column;
+    align-items: flex-start;
+    background: #1a1a1a;
+    border-radius: 5px;
+    padding: 10px;
   }
   h5 {
     color: $purpleColor;
+  }
+  .image-display-none {
+    display: none;
   }
   .image-container {
     position: absolute;
     top: 20px;
     left: 0;
-    @media only screen and (max-width: 376px) {
+    @media only screen and (max-width: $screenMobile) {
       width: 100%;
       position: relative;
       top: unset;
@@ -42,8 +50,7 @@
       img {
         width: 100%;
         height: 300px;
-        @media only screen and (max-width: 376px) {
-          max-width: 300px;
+        @media only screen and (max-width: $screenMobile) {
           height: unset;
         }
       }
@@ -59,11 +66,11 @@
         cursor: pointer;
         background-color: transparent;
       }
-      @media only screen and (max-width: 376px) {
-        max-width: 300px;
+      @media only screen and (max-width: $screenMobile) {
         left: 0;
         right: 0;
         margin: auto;
+        bottom: 5px;
       }
     }
   }
@@ -77,6 +84,9 @@
       font-family: "source_code";
       font-size: $font14;
       color: grey;
+      @media only screen and (max-width: $screenMobile) {
+        justify-content: left;
+      }
     }
     svg {
       color: $greyColor;
@@ -97,8 +107,11 @@
       position: relative;
       box-shadow: 0 10px 30px -5px black;
       border-radius: 5px;
-      @media only screen and (max-width: 376px) {
-        width: 300px;
+      box-sizing: border-box;
+      @media only screen and (max-width: $screenMobile) {
+        width: 100%;
+        box-shadow: unset;
+        background: transparent;
       }
     }
     font-weight: 900;
@@ -108,8 +121,17 @@
       font-family: source_code;
     }
 
-    @media only screen and (max-width: 376px) {
-      text-align: center !important;
+    @media only screen and (max-width: $screenMobile) {
+      text-align: left !important;
     }
+  }
+}
+
+@media only screen and (max-width: $screenMobile) {
+  .image-display {
+    display: none;
+  }
+  .ProjectCard .image-display-none {
+    display: block;
   }
 }

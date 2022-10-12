@@ -18,7 +18,7 @@
   .navbar {
     justify-content: space-between;
     .left-nav {
-      @media only screen and (max-width: 376px) {
+      @media only screen and (max-width: $screenMobile) {
         display: none;
       }
     }
@@ -30,7 +30,7 @@
     // .link-number {
     //   color: $purpleColor;
     //   margin-right: 5px;
-    //   @media only screen and (max-width: 376px) {
+    //   @media only screen and (max-width: $screenMobile) {
     //     margin: 0;
     //   }
     // }
@@ -55,7 +55,7 @@
       padding: 6px 13px;
       border-radius: 3px;
       margin-left: 25px;
-      @media only screen and (max-width: 376px) {
+      @media only screen and (max-width: $screenMobile) {
         margin: 0;
       }
       a {
@@ -70,7 +70,7 @@
   }
 }
 
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: $screenMobile) {
   .Header {
     display: none;
   }

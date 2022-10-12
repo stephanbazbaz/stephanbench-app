@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react'
-import './App.css';
+import './App.scss';
 import Header from './components/Header'
 import Home from './components/Home'
 import About from './components/About'
@@ -9,7 +9,7 @@ import Contact from './components/Contact'
 import Socials from './components/Socials'
 import MobileHeader from './components/MobileHeader/MobileHeader';
 import cx from 'classnames'
-
+import Footer from './components/Footer'
 function App() {
   const [isBlur, setIsBlur] = useState(false)
   const refObj = {
@@ -52,6 +52,7 @@ function App() {
         <Work linkArr={linkArr} />
         <Contact linkArr={linkArr} />
         <Socials />
+        <Footer />
       </div>
     </div>
   );

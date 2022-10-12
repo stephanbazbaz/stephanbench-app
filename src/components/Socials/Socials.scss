@@ -1,7 +1,7 @@
 @import "../../util/styles.scss";
 
 .Socials {
-  @media only screen and (max-width: 376px) {
+  @media only screen and (max-width: $screenMobile) {
     display: none;
   }
   .logo-row {
