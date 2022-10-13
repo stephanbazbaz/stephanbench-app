@@ -45,6 +45,7 @@ body {
   .experience-title {
     color: $colorBlack;
   }
+  .article-title,
   .title {
     color: $colorBlack !important;
   }
@@ -53,10 +54,10 @@ body {
     color: $colorBlack !important;
   }
   .Work .articles-warp {
-    background: #e5e5e5;
+    background: whitesmoke;
   }
   .Header {
-    background: #e5e5e5;
+    background: whitesmoke;
 
     .navbar {
       .link-to {

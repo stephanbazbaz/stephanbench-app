@@ -37,7 +37,6 @@
     transition: all 0.3s ease;
     min-height: unset;
     &:hover {
-      background-color: rgb(86 132 255 / 8%);
       color: $purpleColor;
     }
     @media only screen and (max-width: $screenMobile) {
@@ -51,10 +50,9 @@
     @media only screen and (max-width: $screenMobile) {
       width: 35%;
     }
-
     .selected-tab {
       color: $purpleColor;
-      background-color: rgb(86 132 255 / 8%);
+      background: transparent;
     }
   }
   .MuiTouchRipple-root {

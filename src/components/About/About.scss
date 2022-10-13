@@ -10,14 +10,17 @@ $borderRadius: 5px;
     @include linkNumber;
   }
   .title {
+    max-width: 650px;
+
     .line {
-      max-width: 40%;
+      max-width: 100%;
     }
   }
   .about-row {
     display: flex;
     justify-content: space-between;
-    width: 67%;
+    width: 100%;
+    max-width: 650px;
     @media only screen and (max-width: $screenMobile) {
       width: 100%;
       flex-direction: column;
