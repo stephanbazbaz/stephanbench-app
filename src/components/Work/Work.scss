@@ -11,6 +11,9 @@
   .title {
     .flex {
       width: 100%;
+      h1 {
+        min-width: 214px;
+      }
     }
   }
   .card-container {

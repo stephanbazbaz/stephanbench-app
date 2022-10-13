@@ -77,6 +77,9 @@
   .section-txt {
     text-align: right;
     @include section-text;
+    .label {
+      line-height: 0;
+    }
     .tech-row {
       display: flex;
       justify-content: right;
@@ -86,6 +89,7 @@
       color: grey;
       @media only screen and (max-width: $screenMobile) {
         justify-content: left;
+        font-size: 10px;
       }
     }
     svg {
@@ -101,7 +105,7 @@
     .txt {
       font-family: sans-serif;
       font-weight: 400;
-      padding: 20px 20px 20px 10px;
+      padding: 0px 20px 20px 0px;
       background: #001b29;
       width: 530px;
       position: relative;

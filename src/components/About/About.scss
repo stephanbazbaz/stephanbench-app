@@ -13,7 +13,8 @@ $borderRadius: 5px;
     max-width: 650px;
 
     .line {
-      max-width: 100%;
+      max-width: 70%;
+      min-width: none;
     }
   }
   .about-row {

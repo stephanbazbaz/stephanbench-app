@@ -106,7 +106,7 @@ export const experienceArr = [
     date: 'May 2020 - Present',
     description: [
       'Write modern, performant, maintainable code for a diverse array of client and internal projects',
-      'Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify',
+      'Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Angular, React, Node JS, WordPress, Heroku and Netlify',
     ],
     title: 'Web Developer',
     link: 'https://www.linkedin.com/in/stephan-benchemoul-38879320b/'
