@@ -1,7 +1,7 @@
 import React from 'react'
 import './SectionTitle.scss'
 const SectionTitle = (props) => {
-  const { number, to, fadeConfig } = props
+  const { number = null, to, fadeConfig = {} } = props
   return (
     <div className='title flex' {...fadeConfig} >
       <div className='flex'>

@@ -7,18 +7,35 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  // background-color: #000000;
   font-family: quicksilver;
   background: url("./assets/pics/black_back.jpeg") repeat;
 }
 
 .dark-mode {
-  // background-color: color(#ffeeff);
-  background: color(#ffeeff);
+  background: $whiteColor;
   color: $colorBlack;
+  .Contact p,
+  .About .about-text {
+    color: #3a3a3a;
+  }
+  .About {
+    .tech-col,
+    .about-text {
+      color: #3a3a3a;
+    }
+  }
   .Experience {
     .title {
       color: $colorBlack;
+    }
+    .tab-btn {
+      color: #3a3a3a;
+    }
+    .experience-details {
+      .description-warp .description-row,
+      .period {
+        color: #3a3a3a;
+      }
     }
   }
 
@@ -35,8 +52,11 @@ body {
   .resume-btn a {
     color: $colorBlack !important;
   }
+  .Work .articles-warp {
+    background: #e5e5e5;
+  }
   .Header {
-    background-color: #f8dff5;
+    background: #e5e5e5;
 
     .navbar {
       .link-to {
@@ -70,18 +90,6 @@ p {
   margin: 0;
 }
 
-// .title {
-//   font-family: "source_code";
-//   text-align: left;
-//   margin-bottom: 20px;
-//   max-width: 100%;
-// }
-
-// @media only screen and (max-width: $screenMobile) {
-//   .title {
-//     font-size: $font20;
-//   }
-// }
 .flex {
   display: flex;
   align-items: center;
@@ -93,4 +101,8 @@ p {
 }
 .on-flex {
   display: flex;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
 }

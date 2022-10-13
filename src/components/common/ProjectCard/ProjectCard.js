@@ -1,8 +1,7 @@
 import React from 'react'
 import LaunchIcon from '@mui/icons-material/Launch';
 import './ProjectCard.scss'
-import AOS from "aos"
-import { aosConfig, aosFadeUpLeft, aosFadeUpRight, aosFadeUpUp } from '../../../constants';
+import { aosFadeUpLeft, aosFadeUpRight, aosFadeUpUp } from '../../../constants';
 import cx from 'classnames'
 
 const ProjectCard = (props) => {
@@ -14,7 +13,6 @@ const ProjectCard = (props) => {
     idx = null,
     tech = []
   } = props
-  AOS.init(aosConfig);
   const isEven = num => num % 2 === 0
   const left = window.innerWidth < 391 ? { ...aosFadeUpUp } : { ...aosFadeUpLeft }
   const right = window.innerWidth < 391 ? { ...aosFadeUpUp } : { ...aosFadeUpRight }

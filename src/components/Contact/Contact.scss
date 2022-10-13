@@ -2,7 +2,7 @@
 
 .Contact {
   padding-top: $paddingTopContainer;
-  height: 50vh;
+  height: 100vh;
   color: $whiteColor;
   text-align: center;
   box-sizing: border-box;
@@ -14,6 +14,7 @@
   }
   @media only screen and (max-width: $screenMobile) {
     padding: $mobilePaddingTopContainer;
+    height: 50vh;
   }
   h1 {
     text-align: center;

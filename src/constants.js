@@ -2,8 +2,9 @@ import FACEBOOK from './assets/logos/facebook-f_1.svg'
 import GITHUB from './assets/logos/github_10.svg'
 import LINKDIN from './assets/logos/linkedin_6.svg'
 import MAIL from './assets/logos/mail-outline_1.svg'
-// import STUDIO_PIC from './assets/pics/studiobaz.png'
-// import TIMEOUT_PIC from './assets/pics/timeout_pic.jpeg'
+import STUDIO_PIC from './assets/pics/studiobaz.png'
+import MUSIC4LOVERS from './assets/pics/music4lovers_pic.png'
+import TIMEOUT_PIC from './assets/pics/TIMEOUT_2.png'
 import SUPER_PIC from './assets/pics/supermarket.png'
 import VACATION_PIC from './assets/pics/vacation_pic.png'
 import DISCO_PIC from './assets/pics/disco_pic.png'
@@ -154,25 +155,33 @@ export const Projects = [
     link: 'https://brave-sammet-525389.netlify.app/',
     title: 'MPC Disco Sequencer',
     text: 'Virtual loop machine contaning disco sounds with option to record a session',
-    info: ['React', 'Netlify'],
+    tech: ['React', 'Styled Components', 'Netlify'],
     pic: DISCO_PIC
+  }
+]
+
+export const Articles = [
+  {
+    link: 'https://trommelmusic.com/music/tutorials/the-source-welcome-stephen-bazbaz-who-delivers-a-masterclass-on-pitch-modulation/',
+    title: 'Production Master Class',
+    text: 'Tutorial i made for Trommel magazine on some tips and tricks how to produce interesting sounds.',
+    pic: STUDIO_PIC,
+    tech: ['Abelton live', 'Electronic Music', 'Synthesizers']
   },
-  // {
-  //   link: 'https://trommelmusic.com/music/tutorials/the-source-welcome-stephen-bazbaz-who-delivers-a-masterclass-on-pitch-modulation/',
-  //   title: 'Production Master Class',
-  //   text: 'Tutorial i made for Trommel magazine on some tips and tricks how to produce interesting sounds',
-  //   linkText: 'Read More..',
-  //   pic: STUDIO_PIC,
-  //   isWebsite: false
-  // },
-  // {
-  //   link: 'https://timeout.co.il/%D7%98%D7%99%D7%95%D7%9F-%D7%90%D7%99%D7%9F-%D7%A1%D7%98%D7%A4%D7%9F-%D7%91%D7%96%D7%91%D7%96/',
-  //   title: 'Interview for Timeout Magazine',
-  //   text: 'Some words about my life as a producer and my new passion for code',
-  //   linkText: 'Read More..',
-  //   pic: TIMEOUT_PIC,
-  //   isWebsite:false
-  // }
+  {
+    link: 'https://timeout.co.il/%D7%98%D7%99%D7%95%D7%9F-%D7%90%D7%99%D7%9F-%D7%A1%D7%98%D7%A4%D7%9F-%D7%91%D7%96%D7%91%D7%96/',
+    title: 'Timeout Magazine Interview',
+    text: 'Some words about my life as a producer and my new passion for code.',
+    pic: TIMEOUT_PIC,
+    tech: ['Programming', 'Dj life', 'Tel-Aviv']
+  },
+  {
+    link: 'https://www.musicis4lovers.com/stephan-bazbaz-interview/',
+    title: 'Music 4 Lovers Interview',
+    text: 'Interview for Music 4 Lovers radio show in Ibiza on my EP for Cyclic Records.',
+    pic: MUSIC4LOVERS,
+    tech: ['Abelton live', 'House Music', 'Releases']
+  },
 ]
 
 export const homeIconObj = {
