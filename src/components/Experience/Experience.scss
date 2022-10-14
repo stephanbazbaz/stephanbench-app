@@ -8,9 +8,10 @@
   max-width: 900px;
   margin: auto;
   height: 100vh;
-
+  box-sizing: border-box;
   @media only screen and (max-width: $screenMobile) {
     height: 100vh;
+    padding: 80px 10px;
   }
   .link-number {
     @include linkNumber;

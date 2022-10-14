@@ -105,7 +105,7 @@
     .txt {
       font-family: sans-serif;
       font-weight: 400;
-      padding: 0px 20px 20px 0px;
+      padding: 20px 20px 20px 10px;
       background: #001b29;
       width: 530px;
       position: relative;
@@ -113,6 +113,7 @@
       border-radius: 5px;
       box-sizing: border-box;
       @media only screen and (max-width: $screenMobile) {
+        padding: 0;
         width: 100%;
         box-shadow: unset;
         background: transparent;
