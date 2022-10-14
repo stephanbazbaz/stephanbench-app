@@ -10,6 +10,12 @@ const Socials = () => {
           </div>)}
         <div className='dVLQAC'></div>
       </div>
+      <div className='mail-to'>
+        <div>
+          <a arget='_blank' rel="noreferrer" href='mailto:stephanbncml@gmail.com'>stephanbncml@gmail.com</a>
+        </div>
+        <div className='dVLQAC'></div>
+      </div>
     </div>
   )
 }

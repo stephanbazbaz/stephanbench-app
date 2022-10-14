@@ -4,6 +4,12 @@
   @media only screen and (max-width: $screenMobile) {
     display: none;
   }
+  .mail-to {
+    position: fixed;
+    bottom: 0;
+    right: 60px;
+    display: flex;
+  }
   .logo-row {
     position: fixed;
     bottom: 0;
