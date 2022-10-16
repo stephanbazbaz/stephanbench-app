@@ -20,7 +20,7 @@
     @include hover_line;
 
     @media only screen and (max-width: $screenMobile) {
-      font-size: $font18;
+      font-size: $font20;
       margin-top: 15px;
     }
   }
@@ -43,6 +43,8 @@
         line-height: $lineHeight24;
         @media only screen and (max-width: $screenMobile) {
           line-height: 21px;
+          font-size: 18px;
+          letter-spacing: 0.76px;
         }
       }
       svg {

@@ -10,7 +10,7 @@
   height: 100vh;
   box-sizing: border-box;
   @media only screen and (max-width: $screenMobile) {
-    height: 100vh;
+    height: 100%;
     padding: 80px 10px;
   }
   .link-number {
@@ -24,9 +24,6 @@
       flex-direction: column;
     }
   }
-  // .tabs-container {
-  //   border-left: 1px solid $greyColor;
-  // }
   .tabs-indicator {
     right: unset;
     left: 0;
@@ -49,6 +46,7 @@
       font-size: $font15;
       text-align: center;
       align-items: unset;
+      min-width: 80px;
     }
   }
   .tabs-root {
