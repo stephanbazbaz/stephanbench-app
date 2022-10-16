@@ -1,12 +1,12 @@
 import * as React from "react";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
-
+import { mobileWidth } from '../../../constants'
 const VerticalTabs = (props) => {
   const { value = 0, handleChange, list = [] } = props
   return (
     <Tabs
-      orientation="vertical"
+      orientation={window.innerWidth >= mobileWidth ? "vertical" : 'horizontal'}
       value={value}
       onChange={handleChange}
       classes={{

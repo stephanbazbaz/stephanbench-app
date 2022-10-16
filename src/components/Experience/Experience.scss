@@ -19,10 +19,14 @@
 
   .experience-list-warp {
     display: flex;
+
+    @media only screen and (max-width: $screenMobile) {
+      flex-direction: column;
+    }
   }
-  .tabs-container {
-    border-left: 1px solid $greyColor;
-  }
+  // .tabs-container {
+  //   border-left: 1px solid $greyColor;
+  // }
   .tabs-indicator {
     right: unset;
     left: 0;
@@ -41,15 +45,17 @@
       color: $purpleColor;
     }
     @media only screen and (max-width: $screenMobile) {
-      padding: 12px 7px;
+      padding: 10px 0;
       font-size: $font15;
-      text-align: left;
+      text-align: center;
+      align-items: unset;
     }
   }
   .tabs-root {
     width: 20%;
     @media only screen and (max-width: $screenMobile) {
-      width: 35%;
+      width: 100%;
+      min-height: unset;
     }
     .selected-tab {
       color: $purpleColor;

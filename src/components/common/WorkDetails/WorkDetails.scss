@@ -10,7 +10,8 @@
   width: 80%;
   margin-left: 30px;
   @media only screen and (max-width: $screenMobile) {
-    margin-left: 5px;
+    margin-left: 0px;
+    width: 100%;
   }
 
   .experience-title {
@@ -19,7 +20,8 @@
     @include hover_line;
 
     @media only screen and (max-width: $screenMobile) {
-      font-size: $font15;
+      font-size: $font18;
+      margin-top: 15px;
     }
   }
   .period {
@@ -27,15 +29,12 @@
     font-size: $font16;
     color: $greyColor;
     @media only screen and (max-width: $screenMobile) {
-      font-size: $font15;
+      font-size: $font13;
+      margin: 10px 0 20px;
     }
   }
   .description-warp {
     max-width: 650px;
-
-    @media only screen and (max-width: $screenMobile) {
-      max-width: 250px;
-    }
     .description-row {
       display: flex;
       margin: 10px 0;
@@ -43,8 +42,7 @@
       .description-text {
         line-height: $lineHeight24;
         @media only screen and (max-width: $screenMobile) {
-          line-height: 19px;
-          font-size: $font14;
+          line-height: 21px;
         }
       }
       svg {
