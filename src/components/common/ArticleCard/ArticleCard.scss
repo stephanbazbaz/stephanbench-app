@@ -48,9 +48,9 @@
     box-shadow: 0 10px 30px -5px black;
     .article-header {
       font-weight: 900;
+      font-size: $font20;
     }
     .article-exp {
-      font-size: $font14;
       color: $greyColor;
     }
     .article-main {
@@ -61,13 +61,6 @@
     .article-main-warp {
       justify-content: space-between;
       height: 170px;
-    }
-    .soft-warp {
-      font-size: 10px;
-      display: flex;
-      justify-content: center;
-      gap: 5%;
-      flex-wrap: wrap;
     }
   }
 }

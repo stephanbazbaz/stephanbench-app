@@ -26,10 +26,6 @@ const ArticleCard = (props) => {
           <div className='article-header'>{title}</div>
           <div className='article-exp'>{text}</div>
         </div>
-        <div className='soft-warp'>
-          {tech?.map((item, idx) =>
-            <div key={idx}>{item}</div>)}
-        </div>
       </div>
     </div>
   )
