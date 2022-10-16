@@ -4,19 +4,38 @@
   @media only screen and (max-width: $screenMobile) {
     display: none;
   }
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  align-items: center;
+  width: calc(100% - 120px);
+  left: 60px;
   .mail-to {
-    position: fixed;
-    bottom: 0;
-    right: 60px;
-    display: flex;
+    a {
+      color: $greyColor;
+      text-decoration: none;
+      writing-mode: vertical-rl;
+      margin-bottom: 20px;
+      letter-spacing: 0.1rem;
+      position: relative;
+      transition: all 0.3s;
+      top: 0px;
+      &:hover {
+        top: -3px;
+        cursor: pointer;
+        color: $purpleColor;
+      }
+    }
+    .dVLQAC {
+      width: 4px;
+    }
   }
   .logo-row {
-    position: fixed;
-    bottom: 0;
-    left: 60px;
     .logo-col {
       width: 25px;
-      margin: 20px 0;
+      margin: 0 0 35px;
       position: relative;
       transition: all 0.3s;
       top: 0px;
@@ -39,5 +58,13 @@
     width: 1px;
     height: 130px;
     margin: 0px auto;
+  }
+}
+@media only screen and (max-width: $screenMobile) {
+  .mail-to {
+    display: none;
+  }
+  .Socials {
+    position: relative;
   }
 }

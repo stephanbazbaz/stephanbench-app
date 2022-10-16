@@ -51,9 +51,9 @@ function App() {
         <Experience linkArr={linkArr} />
         <Work linkArr={linkArr} />
         <Contact linkArr={linkArr} />
-        <Socials />
         <Footer />
       </div>
+      <Socials />
     </div>
   );
 }
