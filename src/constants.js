@@ -9,6 +9,8 @@ import SUPER_PIC from './assets/pics/supermarket.png'
 import VACATION_PIC from './assets/pics/vacation_pic.png'
 import DISCO_PIC from './assets/pics/disco_pic.png'
 
+
+export const mobileWidth = 769
 export const socialsArr = [
   {
     href: 'https://www.linkedin.com/in/stephan-benchemoul-38879320b/',

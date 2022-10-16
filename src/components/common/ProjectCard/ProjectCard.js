@@ -1,7 +1,7 @@
 import React from 'react'
 import LaunchIcon from '@mui/icons-material/Launch';
 import './ProjectCard.scss'
-import { aosFadeUpLeft, aosFadeUpRight, aosFadeUpUp } from '../../../constants';
+import { aosFadeUpLeft, aosFadeUpRight, aosFadeUpUp, mobileWidth } from '../../../constants';
 import cx from 'classnames'
 
 const ProjectCard = (props) => {
@@ -14,11 +14,13 @@ const ProjectCard = (props) => {
     tech = []
   } = props
   const isEven = num => num % 2 === 0
-  const left = window.innerWidth < 391 ? { ...aosFadeUpUp } : { ...aosFadeUpLeft }
-  const right = window.innerWidth < 391 ? { ...aosFadeUpUp } : { ...aosFadeUpRight }
+  const left = window.innerWidth < mobileWidth ? {} : { ...aosFadeUpLeft }
+  const right = window.innerWidth < mobileWidth ? {} : { ...aosFadeUpRight }
+  const up = window.innerWidth < mobileWidth ? { ...aosFadeUpUp } : {}
   return (
     <div
       className={cx('ProjectCard flex', { left: isEven(idx), right: !isEven(idx) })}
+      {...up}
     >
       <div className='image-display'>
         <div className='image-container' {...left}>

@@ -8,13 +8,14 @@ import {
   technologiesArr,
   aosFadeUpLeft,
   aosFadeUpRight,
-  aosFadeUpUp
+  aosFadeUpUp,
+  mobileWidth
 } from '../../constants';
 import SectionTitle from '../common/SectionTitle/SectionTitle';
 const About = (props) => {
   const { linkArr } = props
-  const left = window.innerWidth < 391 ? { ...aosFadeUpUp } : { ...aosFadeUpLeft }
-  const right = window.innerWidth < 391 ? { ...aosFadeUpUp } : { ...aosFadeUpRight }
+  const left = window.innerWidth < mobileWidth ? { ...aosFadeUpUp } : { ...aosFadeUpLeft }
+  const right = window.innerWidth < mobileWidth ? { ...aosFadeUpUp } : { ...aosFadeUpRight }
   return (
     <div className='About' ref={linkArr[0].ref} {...right}>
       <SectionTitle
