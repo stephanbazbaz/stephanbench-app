@@ -11,6 +11,7 @@ import MobileHeader from './components/MobileHeader/MobileHeader';
 import cx from 'classnames'
 import Footer from './components/Footer'
 function App() {
+
   const [isBlur, setIsBlur] = useState(false)
   const refObj = {
     workRef: useRef(null),

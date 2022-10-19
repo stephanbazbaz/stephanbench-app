@@ -77,19 +77,19 @@ export const technologiesArr = [
   'Figma',
   'AWS'
 ]
-export const isMobile = () => window.innerWidth < 376
+export const isMobile = () => window.innerWidth <= 768
 export const aosFadeUpLeft = {
-  'data-aos-once': true,
+  // 'data-aos-once': true,
   'data-aos': "fade-up-left",
   'data-aos-anchor-placement': "top-center"
 }
 export const aosFadeUpRight = {
-  'data-aos-once': true,
+  // 'data-aos-once': true,
   'data-aos': "fade-up-right",
   'data-aos-anchor-placement': "top-center"
 }
 export const aosFadeUpUp = {
-  'data-aos-once': true,
+  // 'data-aos-once': true,
   'data-aos': "fade-up",
   'data-aos-anchor-placement': "top-center"
 }

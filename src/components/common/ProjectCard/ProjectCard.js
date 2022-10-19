@@ -40,7 +40,6 @@ const ProjectCard = (props) => {
             <div className='image-warp'>
               <img alt='studio_pic' src={pic} />
             </div>
-            <div className='filter'></div>
           </div>
         </div>
         <div className='txt'>
