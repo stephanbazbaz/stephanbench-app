@@ -133,7 +133,7 @@ $borderRadius: 5px;
     }
   }
 }
-@media (max-width: 1920px) and (min-width: 1281px) {
+@media (max-width: 2400px) and (min-width: 1281px) {
   .About {
     width: 80%;
     margin: auto;
@@ -142,8 +142,8 @@ $borderRadius: 5px;
     }
   }
 }
-@media (max-width: 2400px) and (min-width: 1920px) {
-  .About .about-row {
-    max-width: 1450px;
-  }
-}
+// @media (max-width: 2400px) and (min-width: 1920px) {
+//   .About .about-row {
+//     max-width: 1450px;
+//   }
+// }

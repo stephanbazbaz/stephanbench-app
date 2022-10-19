@@ -35,3 +35,9 @@
     line-height: 33px;
   }
 }
+@media (max-width: 2400px) and (min-width: 1281px) {
+  .Home {
+    width: 80%;
+    margin: auto;
+  }
+}
