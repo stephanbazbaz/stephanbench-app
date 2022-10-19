@@ -16,7 +16,7 @@
 
   .experience-title {
     line-height: $lineHeight42;
-    font-size: $font23;
+    font-size: $font26;
     @include hover_line;
 
     @media only screen and (max-width: $screenMobile) {
@@ -28,9 +28,10 @@
     font-family: source_code;
     font-size: $font16;
     color: $greyColor;
+    font-weight: bold;
+    margin: 10px 0 20px;
     @media only screen and (max-width: $screenMobile) {
       font-size: $font13;
-      margin: 10px 0 20px;
     }
   }
   .description-warp {
@@ -40,10 +41,10 @@
       margin: 10px 0;
       color: $greyColor;
       .description-text {
-        line-height: $lineHeight24;
+        font-size: $font20;
         @media only screen and (max-width: $screenMobile) {
           line-height: 21px;
-          font-size: 18px;
+          font-size: $font18;
           letter-spacing: 0.76px;
         }
       }

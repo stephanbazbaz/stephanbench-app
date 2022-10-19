@@ -1,15 +1,24 @@
 @import "../../util/styles.scss";
 
 .Footer {
-  display: none;
+  display: block;
+
   .footer-txt {
     color: $greyColor;
     font-size: $font18;
+    p {
+      font-family: "source_code";
+      font-size: $font20;
+      color: $whiteColor;
+      padding-bottom: 20px;
+      @media only screen and (max-width: $screenMobile) {
+        font-size: $font14;
+      }
+    }
   }
 }
 @media only screen and (max-width: $screenMobile) {
   .Footer {
-    display: block;
     .Socials {
       display: block;
       .logo-row {

@@ -38,6 +38,10 @@ $borderRadius: 5px;
       max-width: 650px;
       .about-text {
         margin-bottom: 30px;
+
+        @media only screen and (max-width: $screenMobile) {
+          padding: 0 10px;
+        }
       }
       .tech-warp {
         flex-flow: wrap;
@@ -63,7 +67,6 @@ $borderRadius: 5px;
       .my-pic {
         @include wh300;
         z-index: 4;
-        // position: absolute;
         border-radius: $borderRadius;
         @media only screen and (max-width: $screenMobile) {
           position: relative;
@@ -98,8 +101,12 @@ $borderRadius: 5px;
         position: absolute;
         left: 30px;
         top: 30px;
-        z-index: 0;
+        z-index: -1;
         transition: all 0.5s;
+
+        @media only screen and (max-width: $screenMobile) {
+          z-index: 0;
+        }
       }
       @media only screen and (max-width: $screenMobile) {
         .my-pic,

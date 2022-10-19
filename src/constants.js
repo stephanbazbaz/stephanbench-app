@@ -75,7 +75,7 @@ export const technologiesArr = [
   'SQL',
   'Mongo DB',
   'Figma',
-  'Wordpress'
+  'AWS'
 ]
 export const isMobile = () => window.innerWidth < 376
 export const aosFadeUpLeft = {

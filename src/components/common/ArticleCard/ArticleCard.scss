@@ -6,11 +6,13 @@
   padding: 40px;
   background: #1a1a1a;
   border-radius: 3px;
+  gap: 10px;
 
   @media only screen and (max-width: $screenMobile) {
     padding: 20px;
     flex-direction: column;
     align-items: center;
+    gap: unset;
     .article-card {
       margin-bottom: 30px;
     }
@@ -21,14 +23,8 @@
     box-sizing: border-box;
     svg {
       color: $purpleColor;
-
       &:hover {
         animation: spin 0.5s linear backwards;
-      }
-      @keyframes spin {
-        100% {
-          transform: rotate(360deg);
-        }
       }
     }
   }

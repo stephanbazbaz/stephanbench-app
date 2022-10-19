@@ -15,6 +15,12 @@
 }
 .left {
   justify-content: right;
+  .section-txt {
+    align-items: flex-end;
+    @media only screen and (max-width: $screenMobile) {
+      align-items: unset;
+    }
+  }
 }
 
 .ProjectCard {
@@ -57,7 +63,9 @@
       }
     }
     .filter {
-      background-color: rgb(246 0 255 / 49%);
+      filter: brightness(50%);
+      background-color: rgb(149 0 155 / 49%);
+      // background-color: rgb(246 0 255 / 49%);
       position: absolute;
       top: 0;
       bottom: 4px;
@@ -87,7 +95,7 @@
       gap: 10px;
       font-family: "source_code";
       font-size: $font14;
-      color: grey;
+      color: $whiteColor;
       @media only screen and (max-width: $screenMobile) {
         justify-content: left;
         font-size: 10px;
@@ -98,6 +106,7 @@
       transition: all 0.8 ease;
       &:hover {
         color: $purpleColor;
+        animation: spin 0.5s linear backwards;
       }
     }
     h3 {

@@ -23,18 +23,19 @@ const ProjectCard = (props) => {
       {...up}
     >
       <div className='image-display'>
-        <div className='image-container' {...left}>
-          <div className='image-warp'>
-            <img alt='studio_pic' src={pic} />
+        <a target='_blank' rel="noreferrer" href={link}>
+          <div className='image-container' {...left}>
+            <div className='image-warp'>
+              <img alt='studio_pic' src={pic} />
+            </div>
+            <div className='filter'></div>
           </div>
-          <div className='filter'></div>
-        </div>
+        </a>
       </div>
       <div className='section-txt' {...right}>
         <h5>Featured Project</h5>
         <h3>{title}</h3>
         <div className='image-display-none'>
-
           <div className='image-container' {...left}>
             <div className='image-warp'>
               <img alt='studio_pic' src={pic} />
