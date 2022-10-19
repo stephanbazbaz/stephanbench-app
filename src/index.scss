@@ -39,8 +39,19 @@ body {
     }
   }
 
-  .ProjectCard .section-txt h3 {
-    color: $colorBlack;
+  .ProjectCard {
+    .image-container .filter {
+      background-color: rgb(255 255 255 / 45%);
+    }
+    .section-txt {
+      .tech-row,
+      h3 {
+        color: $colorBlack;
+        @media only screen and (max-width: $screenMobile) {
+          color: $whiteColor;
+        }
+      }
+    }
   }
   .experience-title {
     color: $colorBlack;
