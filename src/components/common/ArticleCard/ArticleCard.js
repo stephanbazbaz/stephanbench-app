@@ -4,7 +4,7 @@ import LaunchIcon from '@mui/icons-material/Launch';
 import './ArticleCard.scss'
 
 const ArticleCard = (props) => {
-  const { link = '', title = '', text = '', tech = [] } = props
+  const { link = '', title = '', text = '' } = props
   return (
     <div className='article-card' >
       <div className='flex card-top'>

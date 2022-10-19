@@ -168,21 +168,18 @@ export const Articles = [
     title: 'Production Master Class',
     text: 'Tutorial i made for Trommel magazine on some tips and tricks how to produce interesting sounds.',
     pic: STUDIO_PIC,
-    tech: ['Abelton live', 'Electronic Music', 'Synthesizers']
   },
   {
     link: 'https://timeout.co.il/%D7%98%D7%99%D7%95%D7%9F-%D7%90%D7%99%D7%9F-%D7%A1%D7%98%D7%A4%D7%9F-%D7%91%D7%96%D7%91%D7%96/',
     title: 'Timeout Magazine Interview',
     text: 'Some words about my life as a producer and my new passion for code.',
     pic: TIMEOUT_PIC,
-    tech: ['Programming', 'Dj life', 'Tel-Aviv']
   },
   {
     link: 'https://www.musicis4lovers.com/stephan-bazbaz-interview/',
     title: 'Music 4 Lovers Interview',
     text: 'Interview for Music 4 Lovers radio show in Ibiza on my EP for Cyclic Records.',
     pic: MUSIC4LOVERS,
-    tech: ['Abelton live', 'House Music', 'Releases']
   },
 ]
 
