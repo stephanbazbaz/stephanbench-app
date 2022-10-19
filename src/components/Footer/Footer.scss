@@ -2,14 +2,15 @@
 
 .Footer {
   display: block;
-
+  .Socials {
+    display: none;
+  }
   .footer-txt {
     color: $greyColor;
     font-size: $font18;
     p {
       font-family: "source_code";
-      font-size: $font20;
-      color: $whiteColor;
+      color: $greyColor;
       padding-bottom: 20px;
       @media only screen and (max-width: $screenMobile) {
         font-size: $font14;

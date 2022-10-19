@@ -47,7 +47,7 @@ const ProjectCard = (props) => {
           <p>{text}</p>
         </div>
         <div className='tech-row'>
-          {tech?.map((item, idx) => <div key={`tech- ${idx}`}>{item}</div>)}
+          {tech?.map((item, idx) => <div className='tech-col' key={`tech- ${idx}`}>{item}</div>)}
         </div>
         <span
           className='label'>

@@ -157,7 +157,7 @@ export const Projects = [
     link: 'https://brave-sammet-525389.netlify.app/',
     title: 'MPC Disco Sequencer',
     text: 'Virtual loop machine contaning disco sounds with option to record a session',
-    tech: ['React', 'Styled Components', 'Netlify'],
+    tech: ['React', 'Styled-Components', 'Netlify'],
     pic: DISCO_PIC
   }
 ]
