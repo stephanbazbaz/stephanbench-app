@@ -1,5 +1,6 @@
 import React from 'react'
 import { aboutObj } from '../../constants'
+import SITE_IMG from '../../assets/pics/website_320_img.png'
 const Home = (props) => {
   const { myRef } = props
 
@@ -15,6 +16,7 @@ const Home = (props) => {
         </span> {aboutObj.sound}</h1>
       <script src="https://sdk.scdn.co/spotify-player.js"></script>
       <div className='description'>{aboutObj.description}</div>
+      <img src={SITE_IMG} alt='stephan web developer' style={{ display: 'none' }} />
     </div>
   )
 }
