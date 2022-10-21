@@ -1,11 +1,12 @@
 import React from 'react'
 import ArticleIcon from '@mui/icons-material/Article';
 import LaunchIcon from '@mui/icons-material/Launch';
+import cx from 'classnames';
 
 const ArticleCard = (props) => {
-  const { link = '', title = '', text = '' } = props
+  const { link = '', title = '', text = '', idx = null } = props
   return (
-    <div className='article-card' >
+    <div className={cx('article-card', { 'left-0': idx === 0 })}>
       <div className='flex card-top'>
         <a
           target='_blank'
