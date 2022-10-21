@@ -22,10 +22,12 @@ const Work = (props) => {
           <div className='bottom-line' {...aosFadeUpUp}></div>
         </div>
       )}
-      <div {...aosFadeUpUp}>
+      <div {...aosFadeUpUp} style={{ height: '100vh' }}>
         <h1 className='article-title'>Music & Web</h1>
         <div className='articles-warp'>
           {window.innerWidth < 769 ? <Carousel
+            cycleNavigation={false}
+            navButtonsAlwaysInvisible={true}
             className='my-carousel'
             animation='slide'
             autoPlay={false}>
