@@ -2,8 +2,8 @@ import React from 'react'
 import {
   aosFadeUpUp, socialsArr
 } from '../../constants';
-import MyBtn from '../common/MyBtn/MyBtn';
-import SectionTitle from '../common/SectionTitle/SectionTitle';
+import MyBtn from '../common/MyBtn';
+import SectionTitle from '../common/SectionTitle';
 const Contact = (props) => {
   const { linkArr } = props
   const contactText = 'I’m always looking for any new opportunities so feel free to email me,\n\rWhether you have a question or just want to say hi\n\rand I’ll get back to you shortly :)'

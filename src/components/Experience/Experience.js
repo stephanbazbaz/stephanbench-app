@@ -3,8 +3,8 @@ import AOS from "aos"
 import "aos/dist/aos.css"
 import VerticalTabs from '../common/VerticalTabs'
 import { experienceArr, aosFadeUpUp, aosConfig2 } from '../../constants'
-import WorkDetails from '../common/WorkDetails/WorkDetails'
-import SectionTitle from '../common/SectionTitle/SectionTitle'
+import WorkDetails from '../common/WorkDetails'
+import SectionTitle from '../common/SectionTitle'
 
 AOS.init(aosConfig2)
 const Experience = (props) => {

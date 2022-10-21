@@ -1,7 +1,6 @@
 import React from 'react'
 import ArticleIcon from '@mui/icons-material/Article';
 import LaunchIcon from '@mui/icons-material/Launch';
-import './ArticleCard.scss'
 
 const ArticleCard = (props) => {
   const { link = '', title = '', text = '' } = props

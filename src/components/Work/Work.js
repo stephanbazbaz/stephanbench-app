@@ -1,8 +1,8 @@
 import React from 'react'
 import { Projects, aosFadeUpUp, Articles } from '../../constants';
-import ProjectCard from '../common/ProjectCard/ProjectCard';
-import SectionTitle from '../common/SectionTitle/SectionTitle';
-import ArticleCard from '../common/ArticleCard/ArticleCard';
+import ProjectCard from '../common/ProjectCard';
+import SectionTitle from '../common/SectionTitle';
+import ArticleCard from '../common/ArticleCard';
 
 const Work = (props) => {
   const { linkArr } = props

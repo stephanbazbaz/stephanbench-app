@@ -1,6 +1,5 @@
 import React from 'react'
 import LaunchIcon from '@mui/icons-material/Launch';
-import './ProjectCard.scss'
 import { aosFadeUpLeft, aosFadeUpRight, aosFadeUpUp, mobileWidth } from '../../../constants';
 import cx from 'classnames'
 

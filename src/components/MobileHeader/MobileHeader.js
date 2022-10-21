@@ -8,7 +8,7 @@ import { homeIconObj } from '../../constants';
 import { Spin as Hamburger } from 'hamburger-react'
 import cx from 'classnames'
 import RESUME from '../../assets/Stephan Benchemoul Resume.pdf'
-import MyBtn from '../common/MyBtn/MyBtn';
+import MyBtn from '../common/MyBtn';
 
 const MobileHeader = (props) => {
   const { refObj, linkArr, setIsBlur } = props

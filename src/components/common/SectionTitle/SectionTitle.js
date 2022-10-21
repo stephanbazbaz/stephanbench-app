@@ -1,5 +1,4 @@
 import React from 'react'
-import './SectionTitle.scss'
 const SectionTitle = (props) => {
   const { number = null, to, fadeConfig = {} } = props
   return (

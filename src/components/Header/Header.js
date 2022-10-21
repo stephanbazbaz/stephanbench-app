@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import RESUME from '../../assets/Stephan Benchemoul Resume.pdf'
-import MyBtn from '../common/MyBtn/MyBtn'
+import MyBtn from '../common/MyBtn'
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import Tooltip from '@mui/material/Tooltip';
-import NavLink from '../common/NavLink/NavLink';
+import NavLink from '../common/NavLink';
 import { homeIconObj } from '../../constants';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import Slide from '@mui/material/Slide';

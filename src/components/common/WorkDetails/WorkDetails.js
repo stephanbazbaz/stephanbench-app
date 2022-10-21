@@ -1,6 +1,5 @@
 import React from 'react'
 import PlayArrowOutlinedIcon from '@mui/icons-material/PlayArrowOutlined';
-import './WorkDetails.scss'
 import cx from 'classnames'
 
 const WorkDetails = (props) => {

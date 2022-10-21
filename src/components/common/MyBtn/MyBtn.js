@@ -1,5 +1,4 @@
 import React from 'react'
-import './MyBtn.scss'
 
 const MyBtn = (props) => {
   const { link, text } = props
