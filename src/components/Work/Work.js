@@ -26,8 +26,10 @@ const Work = (props) => {
         <h1 className='article-title'>Music & Web</h1>
         <div className='articles-warp'>
           {window.innerWidth < 769 ? <Carousel
+            navButtonsWrapperProps={{ className: 'navi-btn-wrap' }}
+            navButtonsProps={{ className: 'navi-btn' }}
             cycleNavigation={false}
-            navButtonsAlwaysInvisible={true}
+            navButtonsAlwaysVisible={true}
             className='my-carousel'
             animation='slide'
             autoPlay={false}>
