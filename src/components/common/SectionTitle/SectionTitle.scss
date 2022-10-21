@@ -7,9 +7,7 @@
   margin-bottom: 20px;
   max-width: 100%;
   gap: 10px;
-  // h1 {
-  //   min-width: 100%;
-  // }
+
   .line {
     border-bottom: 1px solid grey;
     width: 100%;
@@ -19,7 +17,10 @@
 @media only screen and (max-width: $screenMobile) {
   .title {
     h1 {
-      font-size: $font15;
+      font-size: 23px;
+    }
+    .line {
+      display: none;
     }
   }
 }

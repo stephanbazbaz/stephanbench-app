@@ -3,6 +3,7 @@ import { Projects, aosFadeUpUp, Articles } from '../../constants';
 import ProjectCard from '../common/ProjectCard';
 import SectionTitle from '../common/SectionTitle';
 import ArticleCard from '../common/ArticleCard';
+import Carousel from 'react-material-ui-carousel'
 
 const Work = (props) => {
   const { linkArr } = props
@@ -24,13 +25,29 @@ const Work = (props) => {
       <div {...aosFadeUpUp}>
         <h1 className='article-title'>Music & Web</h1>
         <div className='articles-warp'>
-          {Articles.map((article, idx) =>
-            <div id={`article-card-${idx}`} key={`article-card-${idx}`} style={{ scrollSnapAlign: 'start' }}>
-              <ArticleCard
-                {...article}
-              />
-            </div>
-          )}
+          {window.innerWidth < 769 ? <Carousel
+            className='my-carousel'
+            animation='slide'
+            autoPlay={false}>
+            {Articles.map((article, idx) =>
+              <div
+                key={`AeticletCard-${idx}`}>
+                <ArticleCard
+                  {...article}
+                />
+              </div>
+            )}
+          </Carousel> :
+            <>
+              {Articles.map((article, idx) =>
+                <div
+                  key={`AeticletCard-${idx}`}>
+                  <ArticleCard
+                    {...article}
+                  />
+                </div>
+              )}
+            </>}
         </div>
       </div>
     </div>
