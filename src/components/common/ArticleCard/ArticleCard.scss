@@ -15,10 +15,6 @@
     scroll-behavior: smooth;
     padding: 0;
     background: unset;
-
-    .article-card {
-      margin-bottom: 30px;
-    }
   }
   .card-top {
     width: 100%;
@@ -46,9 +42,14 @@
     gap: 14px;
     text-align: left;
     box-shadow: 0 10px 30px -5px black;
+
     @media only screen and (max-width: $screenMobile) {
       max-width: unset;
-      width: 90vw;
+      margin-bottom: 30px;
+
+      width: 80vw;
+      position: relative;
+      // left: 20px;
     }
     .article-header {
       font-weight: 900;

@@ -3,7 +3,7 @@ import { Projects, aosFadeUpUp, Articles } from '../../constants';
 import ProjectCard from '../common/ProjectCard';
 import SectionTitle from '../common/SectionTitle';
 import ArticleCard from '../common/ArticleCard';
-import Carousel from 'react-material-ui-carousel'
+// import Carousel from 'react-material-ui-carousel'
 
 const Work = (props) => {
   const { linkArr } = props
@@ -25,7 +25,7 @@ const Work = (props) => {
       <div {...aosFadeUpUp} style={{ height: '100vh' }}>
         <h1 className='article-title'>Music & Web</h1>
         <div className='articles-warp'>
-          {window.innerWidth < 769 ? <Carousel
+          {/* {window.innerWidth < 769 ? <Carousel
             navButtonsWrapperProps={{ className: 'navi-btn-wrap' }}
             navButtonsProps={{ className: 'navi-btn' }}
             cycleNavigation={false}
@@ -51,7 +51,17 @@ const Work = (props) => {
                   />
                 </div>
               )}
-            </>}
+            </>} */}
+          {Articles.map((article, idx) =>
+            <div
+              key={`AeticletCard-${idx}`}
+              style={{ scrollSnapAlign: 'start' }}
+            >
+              <ArticleCard
+                {...article}
+              />
+            </div>
+          )}
         </div>
       </div>
     </div>

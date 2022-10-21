@@ -10,8 +10,11 @@
   }
   .my-carousel {
     width: 100%;
+    position: relative;
     .navi-btn-wrap {
-      top: 60px;
+      bottom: 30px;
+      top: unset;
+      height: fit-content;
     }
     .navi-btn {
       padding: 0;
