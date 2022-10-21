@@ -16,12 +16,7 @@ const Work = (props) => {
         <div key={`ProjectCard-${idx}`} className='card-container'>
           <ProjectCard
             idx={idx}
-            pic={item.pic}
-            title={item.title}
-            text={item.text}
-            link={item.link}
-            linkText={item.linkText}
-            tech={item.tech}
+            {...item}
           />
           <div className='bottom-line' {...aosFadeUpUp}></div>
         </div>
@@ -30,7 +25,7 @@ const Work = (props) => {
         <h1 className='article-title'>Music & Web</h1>
         <div className='articles-warp'>
           {Articles.map((article, idx) =>
-            <div key={`article-ard-${idx}`}>
+            <div id={`article-card-${idx}`} key={`article-card-${idx}`} style={{ scrollSnapAlign: 'start' }}>
               <ArticleCard
                 {...article}
               />
