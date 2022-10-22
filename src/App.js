@@ -43,8 +43,8 @@ function App() {
   ]
   return (
     <div className="App">
-      <Header refObj={refObj} linkArr={linkArr} />
-      <MobileHeader refObj={refObj} linkArr={linkArr} setIsBlur={setIsBlur} />
+      <Header linkArr={linkArr} />
+      <MobileHeader linkArr={linkArr} setIsBlur={setIsBlur} />
       <div className={cx('wrapper', { blur: isBlur })}>
         <Home myRef={refObj.homeRef} />
         <About linkArr={linkArr} />

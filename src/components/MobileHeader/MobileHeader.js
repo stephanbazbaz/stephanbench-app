@@ -11,17 +11,12 @@ import RESUME from '../../assets/Stephan Benchemoul Resume.pdf'
 import MyBtn from '../common/MyBtn';
 
 const MobileHeader = (props) => {
-  const { refObj, linkArr, setIsBlur } = props
+  const { linkArr, setIsBlur } = props
   const [state, setState] = useState({
     isOpen: false,
     isFirstIcon: false,
   })
-  const scrollToHome = () => {
-    closeModal(false)
-    setTimeout(() => {
-      refObj.homeRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }, 300);
-  }
+
   const scrollToElement = (ref) => {
     ref.current.scrollIntoView()
   }
@@ -47,11 +42,12 @@ const MobileHeader = (props) => {
       <Slide appear={true} direction="down" in={!trigger}>
         <div className={cx('MobileHeader')}>
           <div className='flex-between'>
-            <lord-icon
-              onClick={scrollToHome}
-              colors='primary:#ffffff,secondary:#d200ff'
-              {...homeIconObj}>
-            </lord-icon>
+            <a href='/'>
+              <lord-icon
+                colors='primary:#ffffff,secondary:#d200ff'
+                {...homeIconObj}>
+              </lord-icon>
+            </a>
           </div>
         </div>
       </Slide>

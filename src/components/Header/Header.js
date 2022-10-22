@@ -10,11 +10,7 @@ import useScrollTrigger from '@mui/material/useScrollTrigger';
 import Slide from '@mui/material/Slide';
 
 const Header = (props) => {
-  const { refObj, linkArr } = props
-
-  // const scrollToHome = () => refObj.homeRef.current.scrollIntoView(false)
-  const scrollToHome = () => refObj.homeRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
-
+  const { linkArr } = props
   const scrollToElement = (ref) => {
     ref.current.scrollIntoView()
   }
@@ -35,11 +31,12 @@ const Header = (props) => {
       <div className='Header'>
         <div className='navbar flex'>
           <div className='left-nav'>
-            <lord-icon
-              onClick={scrollToHome}
-              colors={`primary:${state.color},secondary:#d200ff`}
-              {...homeIconObj}
-            ></lord-icon>
+            <a href='/'>
+              <lord-icon
+                colors={`primary:${state.color},secondary:#d200ff`}
+                {...homeIconObj}
+              ></lord-icon>
+            </a>
           </div>
           <div className='right-nav flex'>
             {linkArr.map((item, idx) =>
