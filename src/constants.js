@@ -97,7 +97,7 @@ export const aboutObj = {
   myNameIs: 'Hi, my name is',
   fullName: 'Stephan Benchemoul.',
   profession: "Web Developer & Sound Designer.",
-  description: 'I build and design web applications using modern web technologies with a focus on responsiveness, accessibility and pleasing aesthetics .',
+  description: 'I build and design web applications using modern web technologies with a focus on responsiveness, accessibility and pleasing aesthetics.',
   web: 'Web',
   developer: 'Developer',
   sound: '& Sound Designer'
