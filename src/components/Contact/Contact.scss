@@ -2,14 +2,31 @@
 
 .Contact {
   padding-top: $paddingTopContainer;
-  height: 100vh;
+  height: 90vh;
   color: $whiteColor;
   text-align: center;
   box-sizing: border-box;
   @include flex-col;
   justify-content: space-between;
+  .top-row {
+    @include flex-col;
+    padding-top: 100px;
+    gap: 20px;
+    .get-in-t {
+      font-size: 50px;
+    }
+  }
   .title {
     justify-content: center;
+    margin: 0;
+    .flex {
+      align-items: baseline;
+    }
+    h1 {
+      color: $purpleColor;
+      font-weight: unset;
+      font-size: 26px;
+    }
     .line {
       display: none;
     }
