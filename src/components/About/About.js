@@ -37,7 +37,6 @@ const About = (props) => {
         </div>
         <div className='img-warp'>
           <img alt='stephan benchemoul web developer' className='my-pic' src={MYIMG} />
-          {/* <div className='filter'></div> */}
           <div className='square'></div>
         </div>
       </div>
