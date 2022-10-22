@@ -20,7 +20,7 @@ const Contact = (props) => {
           to={"what's next ?"}
           fadeConfig={null} />
         <h1 className='get-in-t'>Get In Touch</h1>
-        <div {...aosFadeUpUp}>
+        <div >
           <p>{contactText}</p>
           <MyBtn text='Say Hello' link={socialsArr[3].href} />
         </div>
