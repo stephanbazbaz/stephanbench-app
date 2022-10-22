@@ -9,7 +9,6 @@ import Contact from './components/Contact'
 import Socials from './components/Socials'
 import MobileHeader from './components/MobileHeader/MobileHeader';
 import cx from 'classnames'
-import Footer from './components/Footer'
 function App() {
 
   const [isBlur, setIsBlur] = useState(false)
@@ -52,7 +51,6 @@ function App() {
         <Experience linkArr={linkArr} />
         <Work linkArr={linkArr} />
         <Contact linkArr={linkArr} />
-        {/* <Footer /> */}
       </div>
       <Socials />
     </div>
