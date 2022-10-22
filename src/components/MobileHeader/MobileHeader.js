@@ -15,12 +15,11 @@ const MobileHeader = (props) => {
   const [state, setState] = useState({
     isOpen: false,
     isFirstIcon: false,
-    isSecondIcon: false,
   })
   const scrollToHome = () => {
     closeModal(false)
     setTimeout(() => {
-      refObj.homeRef.current.scrollIntoView(false)
+      refObj.homeRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }, 300);
   }
   const scrollToElement = (ref) => {

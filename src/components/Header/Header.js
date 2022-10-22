@@ -12,7 +12,9 @@ import Slide from '@mui/material/Slide';
 const Header = (props) => {
   const { refObj, linkArr } = props
 
-  const scrollToHome = () => refObj.homeRef.current.scrollIntoView(false)
+  // const scrollToHome = () => refObj.homeRef.current.scrollIntoView(false)
+  const scrollToHome = () => refObj.homeRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
   const scrollToElement = (ref) => {
     ref.current.scrollIntoView()
   }

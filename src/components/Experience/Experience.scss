@@ -11,7 +11,9 @@
   box-sizing: border-box;
   @media only screen and (max-width: $screenMobile) {
     height: 100%;
-    padding: $mobilePaddingTopContainer;
+    // padding: $mobilePaddingTopContainer;
+    min-height: 100vh;
+    padding: 30px 10px 80px;
   }
   .link-number {
     @include linkNumber;

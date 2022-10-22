@@ -114,3 +114,7 @@ $lineHeight28: 28px;
     transform: rotate(360deg);
   }
 }
+@mixin flex-col {
+  display: flex;
+  flex-direction: column;
+}

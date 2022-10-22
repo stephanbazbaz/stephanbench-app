@@ -86,27 +86,6 @@ $borderRadius: 5px;
           position: relative;
         }
       }
-      // .filter {
-      //   @include wh300;
-      //   position: absolute;
-      //   background-color: $purpleOpacity;
-      //   z-index: 6;
-      //   border-radius: $borderRadius;
-      //   transition: all 0.5s;
-      //   top: 0;
-      //   &:hover {
-      //     background-color: #64ffdb00;
-      //     + .square {
-      //       left: $font15;
-      //       top: $font15;
-
-      //       @media only screen and (max-width: $screenMobile) {
-      //         left: 5px;
-      //         top: 5px;
-      //       }
-      //     }
-      //   }
-      // }
 
       .square {
         border-radius: $borderRadius;
@@ -138,7 +117,7 @@ $borderRadius: 5px;
 }
 @media only screen and (max-width: $screenMobile) {
   .About {
-    padding: $mobilePaddingTopContainer;
+    padding: 130px 10px 80px;
     height: unset;
     .title {
       .line {
@@ -156,8 +135,3 @@ $borderRadius: 5px;
     }
   }
 }
-// @media (max-width: 2400px) and (min-width: 1920px) {
-//   .About .about-row {
-//     max-width: 1450px;
-//   }
-// }

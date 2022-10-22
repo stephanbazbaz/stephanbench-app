@@ -6,6 +6,8 @@
   color: $whiteColor;
   text-align: center;
   box-sizing: border-box;
+  @include flex-col;
+  justify-content: space-between;
   .title {
     justify-content: center;
     .line {
@@ -13,8 +15,8 @@
     }
   }
   @media only screen and (max-width: $screenMobile) {
-    padding: $mobilePaddingTopContainer;
-    height: 80vh;
+    padding: 10px 10px 20px;
+    height: 90vh;
   }
   h1 {
     text-align: center;

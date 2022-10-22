@@ -52,7 +52,7 @@ function App() {
         <Experience linkArr={linkArr} />
         <Work linkArr={linkArr} />
         <Contact linkArr={linkArr} />
-        <Footer />
+        {/* <Footer /> */}
       </div>
       <Socials />
     </div>

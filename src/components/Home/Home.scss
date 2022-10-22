@@ -1,12 +1,20 @@
 @import "../../util/styles.scss";
 
 .Home {
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+
+  min-height: 100vh;
   text-align: left;
-  padding-top: 30px;
-  scroll-margin-top: 80px;
   box-sizing: border-box;
-  padding: 90px 10px 0;
+
+  @media only screen and (max-width: $screenMobile) {
+    padding-bottom: 15vh;
+    min-height: 80vh;
+  }
+
   .my-name-is {
     color: $purpleColor;
     font-family: source_code;

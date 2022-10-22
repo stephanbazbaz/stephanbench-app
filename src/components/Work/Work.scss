@@ -6,7 +6,8 @@
   box-sizing: border-box;
   width: 100%;
   @media only screen and (max-width: $screenMobile) {
-    padding: $mobilePaddingTopContainer;
+    // padding: $mobilePaddingTopContainer;
+    padding: 30px 10px 80px;
   }
   .my-carousel {
     width: 100%;

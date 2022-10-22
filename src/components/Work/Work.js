@@ -20,36 +20,9 @@ const Work = (props) => {
           <div className='bottom-line' {...aosFadeUpUp}></div>
         </div>
       )}
-      <div {...aosFadeUpUp} style={{ height: '100vh' }}>
+      <div {...aosFadeUpUp}>
         <h1 className='article-title'>Music & Web</h1>
         <div className='articles-warp'>
-          {/* {window.innerWidth < 769 ? <Carousel
-            navButtonsWrapperProps={{ className: 'navi-btn-wrap' }}
-            navButtonsProps={{ className: 'navi-btn' }}
-            cycleNavigation={false}
-            navButtonsAlwaysVisible={true}
-            className='my-carousel'
-            animation='slide'
-            autoPlay={false}>
-            {Articles.map((article, idx) =>
-              <div
-                key={`AeticletCard-${idx}`}>
-                <ArticleCard
-                  {...article}
-                />
-              </div>
-            )}
-          </Carousel> :
-            <>
-              {Articles.map((article, idx) =>
-                <div
-                  key={`AeticletCard-${idx}`}>
-                  <ArticleCard
-                    {...article}
-                  />
-                </div>
-              )}
-            </>} */}
           {Articles.map((article, idx) =>
             <div
               key={`AeticletCard-${idx}`}
@@ -61,17 +34,6 @@ const Work = (props) => {
               />
             </div>
           )}
-          {/* {Articles.map((article, idx) =>
-            <div
-              key={`AeticletCard-${idx}`}
-              style={{ scrollSnapAlign: 'start' }}
-              idx={idx}
-            >
-              <ArticleCard
-                {...article}
-              />
-            </div>
-          )} */}
         </div>
       </div>
     </div>
