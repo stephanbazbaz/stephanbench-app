@@ -9,6 +9,8 @@ import Contact from './components/Contact'
 import Socials from './components/Socials'
 import MobileHeader from './components/MobileHeader/MobileHeader';
 import cx from 'classnames'
+import "aos/dist/aos.css"
+
 function App() {
 
   const [isBlur, setIsBlur] = useState(false)

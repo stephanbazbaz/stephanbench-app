@@ -1,12 +1,10 @@
 import React from 'react'
 import MYIMG from '../../assets/pics/1641275635181.jpeg'
-import "aos/dist/aos.css";
 import PlayArrowOutlinedIcon from '@mui/icons-material/PlayArrowOutlined';
 import {
   techText,
   aboutText,
   technologiesArr,
-  aosFadeUpLeft,
   aosFadeUpRight,
   aosFadeUpUp,
   mobileWidth
@@ -14,14 +12,13 @@ import {
 import SectionTitle from '../common/SectionTitle/SectionTitle';
 const About = (props) => {
   const { linkArr } = props
-  const left = window.innerWidth < mobileWidth ? { ...aosFadeUpUp } : { ...aosFadeUpLeft }
   const right = window.innerWidth < mobileWidth ? { ...aosFadeUpUp } : { ...aosFadeUpRight }
   return (
     <div className='About' ref={linkArr[0].ref} {...right}>
       <SectionTitle
         number={linkArr[0].number}
         to={linkArr[0].to}
-        fadeConfig={left} />
+      />
       <div className='about-row' >
         <div className='about-text-warp'>
           <p className='about-text' >{aboutText} <br />

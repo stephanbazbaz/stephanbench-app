@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
 import AOS from "aos"
-import "aos/dist/aos.css"
 import VerticalTabs from '../common/VerticalTabs'
-import { experienceArr, aosFadeUpUp, aosConfig2 } from '../../constants'
+import { experienceArr, aosFadeUpUp, aosConfig } from '../../constants'
 import WorkDetails from '../common/WorkDetails'
 import SectionTitle from '../common/SectionTitle'
 
-AOS.init(aosConfig2)
+AOS.init(aosConfig)
 const Experience = (props) => {
   const { linkArr } = props
   const [state, setState] = useState({
@@ -20,13 +19,13 @@ const Experience = (props) => {
     }, 200);
   }
   return (
-    <div className='Experience' ref={linkArr[1].ref}>
+    <div className='Experience' ref={linkArr[1].ref}  {...aosFadeUpUp}>
       <SectionTitle
         number={linkArr[1].number}
         to={linkArr[1].to}
-        fadeConfig={aosFadeUpUp} />
+      />
       <div>
-        <div className='experience-list-warp' {...aosFadeUpUp}>
+        <div className='experience-list-warp'>
           <VerticalTabs
             handleChange={handleChange}
             value={state.value}

@@ -18,7 +18,7 @@ const Contact = (props) => {
         <SectionTitle
           number={linkArr[3].number}
           to={"what's next ?"}
-          fadeConfig={null} />
+        />
         <h1 className='get-in-t'>Get In Touch</h1>
         <div >
           <p>{contactText}</p>

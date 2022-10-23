@@ -24,7 +24,36 @@
     }
     .right-nav {
       gap: 20px;
-
+      @keyframes fadeIn {
+        0% {
+          transform: translateY(100%);
+          opacity: 0;
+        }
+        55% {
+          transform: translateY(0%);
+          opacity: 0.2;
+        }
+        100% {
+          transform: translateY(0%);
+          opacity: 1;
+        }
+      }
+      .nav-link-warp-0 {
+        opacity: 0;
+        animation: fadeIn 0.5s cubic-bezier(0.25, 0.66, 0.87, 0.36) forwards;
+      }
+      .nav-link-warp-1 {
+        opacity: 0;
+        animation: fadeIn 0.6s cubic-bezier(0.25, 0.66, 0.87, 0.36) forwards;
+      }
+      .nav-link-warp-2 {
+        opacity: 0;
+        animation: fadeIn 0.7s cubic-bezier(0.25, 0.66, 0.87, 0.36) forwards;
+      }
+      .nav-link-warp-3 {
+        opacity: 0;
+        animation: fadeIn 1s cubic-bezier(0.25, 0.66, 0.87, 0.36) forwards;
+      }
       svg {
         cursor: pointer;
       }

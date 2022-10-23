@@ -13,17 +13,16 @@ const ProjectCard = (props) => {
     tech = []
   } = props
   const isEven = num => num % 2 === 0
-  const left = window.innerWidth < mobileWidth ? {} : { ...aosFadeUpLeft }
-  const right = window.innerWidth < mobileWidth ? {} : { ...aosFadeUpRight }
-  const up = window.innerWidth < mobileWidth ? { ...aosFadeUpUp } : {}
+  const isFadeEven = isEven(idx) ? { ...aosFadeUpRight } : { ...aosFadeUpLeft }
+  const isMobileFade = window.innerWidth < mobileWidth ? { ...aosFadeUpUp } : isFadeEven
   return (
     <div
-      className={cx('ProjectCard flex', { left: isEven(idx), right: !isEven(idx) })}
-      {...up}
+      className={cx('ProjectCard flex', { left: !isEven(idx), right: isEven(idx) })}
+      {...isMobileFade}
     >
       <div className='image-display'>
         <a target='_blank' rel="noreferrer" href={link}>
-          <div className='image-container' {...left}>
+          <div className='image-container' >
             <div className='image-warp'>
               <img alt='studio_pic' src={pic} />
             </div>
@@ -31,11 +30,11 @@ const ProjectCard = (props) => {
           </div>
         </a>
       </div>
-      <div className='section-txt' {...right}>
+      <div className='section-txt'>
         <h5>Featured Project</h5>
         <h3>{title}</h3>
         <div className='image-display-none'>
-          <div className='image-container' {...left}>
+          <div className='image-container'>
             <div className='image-warp'>
               <img alt='studio_pic' src={pic} />
             </div>

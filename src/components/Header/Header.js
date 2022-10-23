@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-import RESUME from '../../assets/Stephan Benchemoul Resume.pdf'
-import MyBtn from '../common/MyBtn'
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import Tooltip from '@mui/material/Tooltip';
@@ -40,11 +38,10 @@ const Header = (props) => {
           </div>
           <div className='right-nav flex'>
             {linkArr.map((item, idx) =>
-              <div key={idx}>
+              <div key={idx} className={`nav-link-warp-${idx}`}>
                 <NavLink number={item.number} text={item.to} handleClick={() => scrollToElement(item.ref)} />
               </div>
             )}
-            <MyBtn text='Resume' link={RESUME} />
             {state.isDark ?
               <Tooltip title='Light mode'>
                 <DarkModeIcon onClick={() => changeTheme()} htmlColor='white' />

@@ -51,12 +51,7 @@ export const activeAos = () => {
 }
 
 export const aosConfig = {
-  duration: 350,
-  easing: 'ease-in',
-  mirror: true,
-};
-export const aosConfig2 = {
-  duration: 500,
+  duration: 300,
   easing: 'ease-in',
   mirror: true,
 };
@@ -79,17 +74,17 @@ export const technologiesArr = [
 ]
 export const isMobile = () => window.innerWidth <= 768
 export const aosFadeUpLeft = {
-  // 'data-aos-once': true,
+  'data-aos-once': true,
   'data-aos': "fade-up-left",
   'data-aos-anchor-placement': "top-center"
 }
 export const aosFadeUpRight = {
-  // 'data-aos-once': true,
+  'data-aos-once': true,
   'data-aos': "fade-up-right",
   'data-aos-anchor-placement': "top-center"
 }
 export const aosFadeUpUp = {
-  // 'data-aos-once': true,
+  'data-aos-once': true,
   'data-aos': "fade-up",
   'data-aos-anchor-placement': "top-center"
 }

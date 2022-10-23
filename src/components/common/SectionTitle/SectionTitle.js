@@ -1,8 +1,8 @@
 import React from 'react'
 const SectionTitle = (props) => {
-  const { number = null, to, fadeConfig = {} } = props
+  const { number = null, to } = props
   return (
-    <div className='title flex' {...fadeConfig} >
+    <div className='title flex'>
       <div className='flex'>
         <span className='link-number'>{number}</span>
         <h1>{to}</h1>

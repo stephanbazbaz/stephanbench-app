@@ -6,18 +6,18 @@ import ArticleCard from '../common/ArticleCard';
 const Work = (props) => {
   const { linkArr } = props
   return (
-    <div ref={linkArr[2].ref} className='Work' >
+    <div ref={linkArr[2].ref} className='Work' {...aosFadeUpUp}>
       <SectionTitle
         number={linkArr[2].number}
-        to='Some Things I’ve Built'
-        fadeConfig={aosFadeUpUp} />
+        to='Projects I’ve Built'
+      />
       {Projects.map((item, idx) =>
         <div key={`ProjectCard-${idx}`} className='card-container'>
           <ProjectCard
             idx={idx}
             {...item}
           />
-          <div className='bottom-line' {...aosFadeUpUp}></div>
+          <div className='bottom-line' ></div>
         </div>
       )}
       <div {...aosFadeUpUp}>

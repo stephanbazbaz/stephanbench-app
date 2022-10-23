@@ -7,8 +7,6 @@ import Drawer from "@mui/material/Drawer";
 import { homeIconObj } from '../../constants';
 import { Spin as Hamburger } from 'hamburger-react'
 import cx from 'classnames'
-import RESUME from '../../assets/Stephan Benchemoul Resume.pdf'
-import MyBtn from '../common/MyBtn';
 
 const MobileHeader = (props) => {
   const { linkArr, setIsBlur } = props
@@ -77,7 +75,6 @@ const MobileHeader = (props) => {
             <NavLink number={item.number} text={item.to} handleClick={() => closeModal(item.ref)} />
           </div>
         )}
-        <MyBtn text='Resume' link={RESUME} />
       </Drawer>
     </>
   )
