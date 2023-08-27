@@ -10,6 +10,7 @@ import VACATION_PIC from './assets/pics/vacation_pic.png'
 import DISCO_PIC from './assets/pics/disco_pic.png'
 import ALEX_PIC from './assets/pics/alex-pic.png'
 import DOZEN_SHOP from './assets/pics/dozen_wishes.png'
+import NAOMI_PIC from './assets/pics/naomi_pic.png'
 
 
 export const mobileWidth = 769
@@ -154,10 +155,17 @@ export const Projects = [
   },
   {
     link: 'https://dozen-wishes.com/',
-    title: 'Jewelry online shop ',
+    title: 'Jewelry online shop',
     text: 'Shopify design for desktop and mobile',
     tech: ['Shopify', 'css', 'javascript'],
     pic: DOZEN_SHOP
+  },
+  {
+    link: 'https://drnaomiheyman.com/',
+    title: 'Therapist portfolio',
+    text: 'Portfolio app for an expressive therapist',
+    tech: ['React', 'css', 'javascript'],
+    pic: NAOMI_PIC
   },
   {
     link: 'https://stephansupermarketapp.herokuapp.com/',
