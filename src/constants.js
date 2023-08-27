@@ -8,6 +8,8 @@ import TIMEOUT_PIC from './assets/pics/TIMEOUT_2.png'
 import SUPER_PIC from './assets/pics/supermarket.png'
 import VACATION_PIC from './assets/pics/vacation_pic.png'
 import DISCO_PIC from './assets/pics/disco_pic.png'
+import ALEX_PIC from './assets/pics/alex-pic.png'
+import DOZEN_SHOP from './assets/pics/dozen_wishes.png'
 
 
 export const mobileWidth = 769
@@ -62,15 +64,15 @@ export const techText = "Here are a few technologies I’ve been working with re
 
 
 export const technologiesArr = [
+  'Shopify',
+  'Squarespace',
   'Javascript',
   'Typescript',
   'React',
-  'Angular',
   'Node JS',
   'SQL',
   'Mongo DB',
   'Figma',
-  'AWS'
 ]
 export const isMobile = () => window.innerWidth <= 768
 export const aosFadeUpLeft = {
@@ -101,6 +103,7 @@ export const experienceArr = [
     label: 'Freelance',
     date: 'May 2020 - Present',
     description: [
+      'Shopify and Squarespace expert, building full apps from scratch or fixing existing websites. code intervention.',
       'Write modern, performant, maintainable code for a diverse array of client and internal projects',
       'Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Angular, React, Node JS, WordPress, Heroku and Netlify',
     ],
@@ -142,6 +145,20 @@ export const experienceArr = [
 ]
 
 export const Projects = [
+  {
+    link: 'https://alexsahara.com/',
+    title: 'Alex Online Clothes',
+    text: 'Shopify clothing store for woman clothing. english and hebrew languages, desktop amd mobile design',
+    tech: ['Shopify', 'css', 'javascript'],
+    pic: ALEX_PIC
+  },
+  {
+    link: 'https://dozen-wishes.com/',
+    title: 'Jewelry online shop ',
+    text: 'Shopify design for desktop and mobile',
+    tech: ['Shopify', 'css', 'javascript'],
+    pic: DOZEN_SHOP
+  },
   {
     link: 'https://stephansupermarketapp.herokuapp.com/',
     title: 'Super Market App',
