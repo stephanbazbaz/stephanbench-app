@@ -54,7 +54,7 @@ export const aosConfig = {
   duration: 300,
   easing: 'ease-in',
   mirror: true,
-};
+}
 
 export const loremIpsum = "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
 export const aboutText = "Hi! My name is Stephan and I enjoy creating things that live on the internet. My relationship with computers & softwares started back in 2006 when I did my Bachelor degree in Sound engineering. After years in the music production industry i decided to take things to the next level and studied web development. As a web developer I had the privilege of working with 2 major outsourcing companies which gave web solutions to fintech companies and start ups. As a developer my main focus is building accessible, inclusive products and digital experiences for a variety of clients."
@@ -93,9 +93,8 @@ export const aboutObj = {
   fullName: 'Stephan Benchemoul.',
   profession: "Web Developer & Sound Designer.",
   description: 'I build and design web applications using modern web technologies with a focus on responsiveness, accessibility and pleasing aesthetics.',
-  web: 'Web',
-  developer: 'Developer',
-  sound: '& Sound Designer'
+  web: 'Software Engineer & Web',
+  developer: 'Developer.',
 }
 export const experienceArr = [
   {
@@ -106,6 +105,15 @@ export const experienceArr = [
       'Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Angular, React, Node JS, WordPress, Heroku and Netlify',
     ],
     title: 'Web Developer',
+    link: 'https://www.linkedin.com/in/stephan-benchemoul-38879320b/'
+  },
+  {
+    label: 'nRich',
+    date: 'November 2022 - Present',
+    description: [
+      'A Node.js backend developer builds server-side applications using Node.js, ensuring efficient and scalable backend systems.',
+    ],
+    title: 'Backend Developer',
     link: 'https://www.linkedin.com/in/stephan-benchemoul-38879320b/'
   },
   {

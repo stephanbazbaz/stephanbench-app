@@ -19,7 +19,7 @@ const Experience = (props) => {
     }, 200);
   }
   return (
-    <div className='Experience' ref={linkArr[1].ref}  {...aosFadeUpUp}>
+    <div className='Experience' ref={linkArr[1].ref} {...aosFadeUpUp}>
       <SectionTitle
         number={linkArr[1].number}
         to={linkArr[1].to}

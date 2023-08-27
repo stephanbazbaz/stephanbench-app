@@ -14,7 +14,9 @@ const Home = (props) => {
             style={{
               color: '#d200ff'
             }}> {aboutObj.developer}
-          </span> {aboutObj.sound}</h1>
+          </span>
+          {/* {aboutObj.sound} */}
+        </h1>
       </div>
       <div className='description'>{aboutObj.description}</div>
       <img src={SITE_IMG} alt='stephan web developer' style={{ display: 'none' }} />
