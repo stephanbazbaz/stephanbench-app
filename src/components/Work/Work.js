@@ -1,8 +1,7 @@
 import React from 'react'
-import { Projects, aosFadeUpUp, Articles } from '../../constants';
+import { Projects, aosFadeUpUp } from '../../constants';
 import ProjectCard from '../common/ProjectCard';
 import SectionTitle from '../common/SectionTitle';
-import ArticleCard from '../common/ArticleCard';
 const Work = (props) => {
   const { linkArr } = props
   return (
@@ -20,22 +19,6 @@ const Work = (props) => {
           <div className='bottom-line' ></div>
         </div>
       )}
-      <div {...aosFadeUpUp}>
-        <h1 className='article-title'>Music & Web</h1>
-        <div className='articles-warp'>
-          {Articles.map((article, idx) =>
-            <div
-              key={`AeticletCard-${idx}`}
-              style={{ scrollSnapAlign: 'center' }}
-            >
-              <ArticleCard
-                {...article}
-                idx={idx}
-              />
-            </div>
-          )}
-        </div>
-      </div>
     </div>
   )
 }
