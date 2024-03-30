@@ -11,6 +11,7 @@ import DISCO_PIC from './assets/pics/disco_pic.png'
 import ALEX_PIC from './assets/pics/alex-pic.png'
 import DOZEN_SHOP from './assets/pics/dozen_wishes.png'
 import NAOMI_PIC from './assets/pics/naomi_pic.png'
+import LULU_PIC from './assets/pics/lulusinit_pic.png'
 
 
 export const mobileWidth = 769
@@ -146,6 +147,13 @@ export const experienceArr = [
 ]
 
 export const Projects = [
+  {
+    link: 'https://www.lulusinit.com/',
+    title: 'Personal Business Website',
+    text: 'Chinese medicine therapist website',
+    tech: ['Squarespace', 'css', 'javascript'],
+    pic: LULU_PIC
+  },
   {
     link: 'https://alexsahara.com/',
     title: 'Alex Online Clothes',
