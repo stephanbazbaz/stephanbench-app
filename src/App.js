@@ -1,10 +1,8 @@
 import { useRef, useState } from 'react'
 import './App.scss';
 import Header from './components/Header'
-import Home from './components/Home'
 import About from './components/About'
 import Work from './components/Work'
-import Experience from './components/Experience'
 import Contact from './components/Contact'
 import Socials from './components/Socials'
 import MobileHeader from './components/MobileHeader/MobileHeader';
@@ -48,10 +46,8 @@ function App() {
       <Header linkArr={linkArr} />
       <MobileHeader linkArr={linkArr} setIsBlur={setIsBlur} />
       <div className={cx('wrapper', { blur: isBlur })}>
-        {/*<Home myRef={refObj.homeRef} />*/}
         <Work linkArr={linkArr} />
         <About linkArr={linkArr} />
-        {/*<Experience linkArr={linkArr} />*/}
         <Contact linkArr={linkArr} />
       </div>
       <Socials />

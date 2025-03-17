@@ -2,19 +2,15 @@ import React from 'react'
 import MYIMG from '../../assets/pics/1641275635181.jpeg'
 import PlayArrowOutlinedIcon from '@mui/icons-material/PlayArrowOutlined';
 import {
-  techText,
   aboutText,
   technologiesArr,
-  aosFadeUpRight,
-  aosFadeUpUp,
-  mobileWidth
 } from '../../constants';
 import SectionTitle from '../common/SectionTitle/SectionTitle';
 const About = (props) => {
   const { linkArr } = props
-  const right = window.innerWidth < mobileWidth ? { ...aosFadeUpUp } : { ...aosFadeUpRight }
+  // const right = window.innerWidth < mobileWidth ? { ...aosFadeUpUp } : { ...aosFadeUpRight }
   return (
-    <div className='About' ref={linkArr[1].ref} {...right}>
+    <div className='About' ref={linkArr[1].ref}>
       <SectionTitle
         // number={linkArr[0].number}
         to={'About'}

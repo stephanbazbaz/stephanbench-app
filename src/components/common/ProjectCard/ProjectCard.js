@@ -1,24 +1,21 @@
 import React from 'react'
 import LaunchIcon from '@mui/icons-material/Launch';
-import { aosFadeUpLeft, aosFadeUpRight, aosFadeUpUp, mobileWidth } from '../../../constants';
 import cx from 'classnames'
 
 const ProjectCard = (props) => {
   const {
     pic = '',
     title = '',
-    text = '',
     link = '',
     idx = null,
     tech = []
   } = props
   const isEven = num => num % 2 === 0
-  const isFadeEven = isEven(idx) ? { ...aosFadeUpRight } : { ...aosFadeUpLeft }
-  const isMobileFade = window.innerWidth < mobileWidth ? { ...aosFadeUpUp } : isFadeEven
+  // const isFadeEven = isEven(idx) ? { ...aosFadeUpRight } : { ...aosFadeUpLeft }
+  // const isMobileFade = window.innerWidth < mobileWidth ? { ...aosFadeUpUp } : isFadeEven
   return (
     <div
       className={cx('ProjectCard flex', { left: !isEven(idx), right: isEven(idx) })}
-      {...isMobileFade}
     >
       <div className='image-display'>
         <a target='_blank' rel="noreferrer" href={link}>

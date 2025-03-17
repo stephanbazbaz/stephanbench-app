@@ -1,11 +1,11 @@
 import React from 'react'
-import { Projects, aosFadeUpUp } from '../../constants';
+import { Projects} from '../../constants';
 import ProjectCard from '../common/ProjectCard';
 import SectionTitle from '../common/SectionTitle';
 const Work = (props) => {
   const { linkArr } = props
   return (
-    <div ref={linkArr[0].ref} className='Work' {...aosFadeUpUp}>
+    <div ref={linkArr[0].ref} className='Work'>
       <SectionTitle
         // number={linkArr[2].number}
         to='Work'

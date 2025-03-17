@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-  aosFadeUpUp, socialsArr
+  socialsArr
 } from '../../constants';
 import MyBtn from '../common/MyBtn';
 import SectionTitle from '../common/SectionTitle';
@@ -13,7 +13,6 @@ const Contact = (props) => {
     <div className='Contact' ref={linkArr[2].ref}>
       <div
         className='top-row'
-        {...aosFadeUpUp}
       >
         <SectionTitle
           to={"Contact"}
