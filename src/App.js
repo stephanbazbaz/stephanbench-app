@@ -23,20 +23,20 @@ function App() {
   }
   const linkArr = [
     {
-      to: 'About',
-      number: '01.',
-      ref: refObj.aboutRef
-    },
-    {
-      to: 'Experience',
+      to: 'Work',
       number: '02.',
       ref: refObj.experienceRef
     },
     {
-      to: 'Work',
-      number: '03.',
-      ref: refObj.workRef
+      to: 'About',
+      number: '01.',
+      ref: refObj.aboutRef
     },
+    // {
+    //   to: 'Experience',
+    //   number: '03.',
+    //   ref: refObj.workRef
+    // },
     {
       to: 'Contact',
       number: '04.',
@@ -48,10 +48,10 @@ function App() {
       <Header linkArr={linkArr} />
       <MobileHeader linkArr={linkArr} setIsBlur={setIsBlur} />
       <div className={cx('wrapper', { blur: isBlur })}>
-        <Home myRef={refObj.homeRef} />
-        <About linkArr={linkArr} />
-        <Experience linkArr={linkArr} />
+        {/*<Home myRef={refObj.homeRef} />*/}
         <Work linkArr={linkArr} />
+        <About linkArr={linkArr} />
+        {/*<Experience linkArr={linkArr} />*/}
         <Contact linkArr={linkArr} />
       </div>
       <Socials />

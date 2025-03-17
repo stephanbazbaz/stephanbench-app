@@ -39,7 +39,9 @@ const Header = (props) => {
           <div className='right-nav flex'>
             {linkArr.map((item, idx) =>
               <div key={idx} className={`nav-link-warp-${idx}`}>
-                <NavLink number={item.number} text={item.to} handleClick={() => scrollToElement(item.ref)} />
+                <NavLink
+                    // number={item.number}
+                    text={item.to} handleClick={() => scrollToElement(item.ref)} />
               </div>
             )}
             {state.isDark ?

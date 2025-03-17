@@ -14,16 +14,16 @@ const About = (props) => {
   const { linkArr } = props
   const right = window.innerWidth < mobileWidth ? { ...aosFadeUpUp } : { ...aosFadeUpRight }
   return (
-    <div className='About' ref={linkArr[0].ref} {...right}>
+    <div className='About' ref={linkArr[1].ref} {...right}>
       <SectionTitle
-        number={linkArr[0].number}
-        to={linkArr[0].to}
+        // number={linkArr[0].number}
+        to={'About'}
       />
       <div className='about-row' >
         <div className='about-text-warp'>
           <p className='about-text' >{aboutText} <br />
           </p>
-          <p className='about-text'>{techText}</p>
+          {/*<p className='about-text'>{techText}</p>*/}
           <div className='tech-warp flex'>
             {technologiesArr.map((item, idx) =>
               <div className='flex tech-col' key={`tech-${idx}`}>

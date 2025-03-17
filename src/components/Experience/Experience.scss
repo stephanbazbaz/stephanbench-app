@@ -21,7 +21,10 @@
 
   .experience-list-warp {
     display: flex;
-
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     @media only screen and (max-width: $screenMobile) {
       flex-direction: column;
     }

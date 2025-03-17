@@ -5,10 +5,10 @@ import SectionTitle from '../common/SectionTitle';
 const Work = (props) => {
   const { linkArr } = props
   return (
-    <div ref={linkArr[2].ref} className='Work' {...aosFadeUpUp}>
+    <div ref={linkArr[0].ref} className='Work' {...aosFadeUpUp}>
       <SectionTitle
-        number={linkArr[2].number}
-        to='Projects I’ve Built'
+        // number={linkArr[2].number}
+        to='Work'
       />
       {Projects.map((item, idx) =>
         <div key={`ProjectCard-${idx}`} className='card-container'>

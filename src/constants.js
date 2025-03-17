@@ -12,6 +12,9 @@ import ALEX_PIC from './assets/pics/alex-pic.png'
 import DOZEN_SHOP from './assets/pics/dozen_wishes.png'
 import NAOMI_PIC from './assets/pics/naomi_pic.png'
 import LULU_PIC from './assets/pics/lulusinit_pic.png'
+import PTCH from './assets/pics/PTCH.png'
+import OTEF from './assets/pics/OTEF.png'
+import MONK from './assets/pics/MONK.png'
 
 
 export const mobileWidth = 769
@@ -61,7 +64,9 @@ export const aosConfig = {
 }
 
 export const loremIpsum = "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
-export const aboutText = "Hi! My name is Stephan and I enjoy creating things that live on the internet. My relationship with computers & softwares started back in 2006 when I did my Bachelor degree in Sound engineering. After years in the music production industry i decided to take things to the next level and studied web development. As a web developer I had the privilege of working with 2 major outsourcing companies which gave web solutions to fintech companies and start ups. As a developer my main focus is building accessible, inclusive products and digital experiences for a variety of clients."
+// export const aboutText = "Hi! My name is Stephan and I enjoy creating things that live on the internet. My relationship with computers & softwares started back in 2006 when I did my Bachelor degree in Sound engineering. After years in the music production industry i decided to take things to the next level and studied web development. As a web developer I had the privilege of working with 2 major outsourcing companies which gave web solutions to fintech companies and start ups. As a developer my main focus is building accessible, inclusive products and digital experiences for a variety of clients."
+export const aboutText = "Full stack Web developer with 5 years experience.\n" +
+    "From complex server architecture and frontend pixel perfect scenarios to Shopify and Squaresapce design and code intervention ."
 export const techText = "Here are a few technologies I’ve been working with recently:"
 
 
@@ -114,7 +119,7 @@ export const experienceArr = [
   },
   {
     label: 'nRich',
-    date: 'November 2022 - Present',
+    date: 'Nov 2022 - Nov 2024',
     description: [
       'A Node.js backend developer builds server-side applications using Node.js, ensuring efficient and scalable backend systems.',
     ],
@@ -148,6 +153,27 @@ export const experienceArr = [
 
 export const Projects = [
   {
+    link: 'https://monkoffee.com/',
+    title: 'Online Coffee Shop',
+    text: 'Chinese medicine therapist website',
+    tech: ['Shopify', 'css', 'javascript'],
+    pic: MONK
+  },
+  {
+    link: 'https://otef.shop/',
+    title: 'Online Clothing Shop',
+    text: 'Chinese medicine therapist website',
+    tech: ['Shopify', 'css', 'javascript'],
+    pic: OTEF
+  },
+  {
+    link: 'https://www.guypitchon.com/',
+    title: 'Artist Portfolio Website',
+    text: 'Chinese medicine therapist website',
+    tech: ['Squarespace', 'css', 'javascript'],
+    pic: PTCH
+  },
+  {
     link: 'https://www.lulusinit.com/',
     title: 'Personal Business Website',
     text: 'Chinese medicine therapist website',
@@ -168,34 +194,34 @@ export const Projects = [
     tech: ['Shopify', 'css', 'javascript'],
     pic: DOZEN_SHOP
   },
-  {
-    link: 'https://drnaomiheyman.com/',
-    title: 'Therapist portfolio',
-    text: 'Portfolio app for an expressive therapist',
-    tech: ['React', 'css', 'javascript'],
-    pic: NAOMI_PIC
-  },
-  {
-    link: 'https://stephansupermarketapp.herokuapp.com/',
-    title: 'Super Market App',
-    text: 'Final project from my studies at Jhon bryce Academy. Full E-commerce website of a Vegan Supermarket.',
-    tech: ['React', 'Node.js', 'SQL', 'PostgreSQL', 'Heroku'],
-    pic: SUPER_PIC
-  },
-  {
-    link: 'https://stark-basin-64884.herokuapp.com/',
-    title: 'Vacations App',
-    text: 'Second project from my studies at Jhon bryce Academy emulating a vacation App where you can search & follow vacations. you can login to Admin to upload new vacations using admin username: adminadmin, password: admin1234.',
-    tech: ['React', 'Node.js', 'SQL', 'PostgreSQL', 'Heroku'],
-    pic: VACATION_PIC
-  },
-  {
-    link: 'https://brave-sammet-525389.netlify.app/',
-    title: 'MPC Disco Sequencer',
-    text: 'Virtual loop machine contaning disco sounds with option to record a session',
-    tech: ['React', 'Styled-Components', 'Netlify'],
-    pic: DISCO_PIC
-  }
+  // {
+  //   link: 'https://drnaomiheyman.com/',
+  //   title: 'Therapist portfolio',
+  //   text: 'Portfolio app for an expressive therapist',
+  //   tech: ['React', 'css', 'javascript'],
+  //   pic: NAOMI_PIC
+  // },
+  // {
+  //   link: 'https://stephansupermarketapp.herokuapp.com/',
+  //   title: 'Super Market App',
+  //   text: 'Final project from my studies at Jhon bryce Academy. Full E-commerce website of a Vegan Supermarket.',
+  //   tech: ['React', 'Node.js', 'SQL', 'PostgreSQL', 'Heroku'],
+  //   pic: SUPER_PIC
+  // },
+  // {
+  //   link: 'https://stark-basin-64884.herokuapp.com/',
+  //   title: 'Vacations App',
+  //   text: 'Second project from my studies at Jhon bryce Academy emulating a vacation App where you can search & follow vacations. you can login to Admin to upload new vacations using admin username: adminadmin, password: admin1234.',
+  //   tech: ['React', 'Node.js', 'SQL', 'PostgreSQL', 'Heroku'],
+  //   pic: VACATION_PIC
+  // },
+  // {
+  //   link: 'https://brave-sammet-525389.netlify.app/',
+  //   title: 'MPC Disco Sequencer',
+  //   text: 'Virtual loop machine contaning disco sounds with option to record a session',
+  //   tech: ['React', 'Styled-Components', 'Netlify'],
+  //   pic: DISCO_PIC
+  // }
 ]
 
 export const Articles = [

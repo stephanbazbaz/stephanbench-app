@@ -31,7 +31,7 @@ const ProjectCard = (props) => {
         </a>
       </div>
       <div className='section-txt'>
-        <h5>Featured Project</h5>
+        {/*<h5>Featured Project</h5>*/}
         <h3>{title}</h3>
         <div className='image-display-none'>
           <div className='image-container'>
@@ -40,9 +40,9 @@ const ProjectCard = (props) => {
             </div>
           </div>
         </div>
-        <div className='txt'>
-          <p>{text}</p>
-        </div>
+        {/*<div className='txt'>*/}
+        {/*  <p>{text}</p>*/}
+        {/*</div>*/}
         <div className='tech-row'>
           {tech?.map((item, idx) => <div className='tech-col' key={`tech- ${idx}`}>{item}</div>)}
         </div>

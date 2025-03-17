@@ -72,7 +72,9 @@ const MobileHeader = (props) => {
       >
         {linkArr.map((item, idx) =>
           <div key={idx}>
-            <NavLink number={item.number} text={item.to} handleClick={() => closeModal(item.ref)} />
+            <NavLink
+                // number={item.number}
+                text={item.to} handleClick={() => closeModal(item.ref)} />
           </div>
         )}
       </Drawer>

@@ -1,4 +1,5 @@
 @import "../../util/styles.scss";
+
 $borderRadius: 5px;
 .About {
   padding-top: 120px;
@@ -8,17 +9,20 @@ $borderRadius: 5px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
   .link-number {
     @include linkNumber;
   }
+
   .title {
     max-width: 650px;
 
     .line {
       max-width: 70%;
-      min-width: none;
+      min-width: unset;
     }
   }
+
   .about-row {
     display: flex;
     justify-content: space-between;
@@ -33,33 +37,39 @@ $borderRadius: 5px;
       padding: 10px 0 30px;
       border-radius: 5px;
     }
+
     .about-text-warp {
       @include section-text;
       max-width: 650px;
+
       .about-text {
         margin-bottom: 30px;
-
+        white-space: pre-line;
         @media only screen and (max-width: $screenMobile) {
           padding: 0 10px;
         }
       }
+
       .tech-warp {
         flex-flow: wrap;
         justify-content: space-between;
         max-width: 500px;
         font-size: $font16;
+
         .tech-col {
           margin: 10px 0;
           min-width: 130px;
           font-family: source_code;
           font-size: $font14;
         }
+
         svg {
           color: $purpleColor;
           margin-right: 5px;
         }
       }
     }
+
     .img-warp {
       position: relative;
       width: fit-content;
@@ -70,8 +80,10 @@ $borderRadius: 5px;
         border-radius: $borderRadius;
         transition: all 0.5s;
         filter: brightness(0.7);
+
         &:hover {
           filter: brightness(1);
+
           + .square {
             left: $font15;
             top: $font15;
@@ -82,6 +94,7 @@ $borderRadius: 5px;
             }
           }
         }
+
         @media only screen and (max-width: $screenMobile) {
           position: relative;
         }
@@ -101,6 +114,7 @@ $borderRadius: 5px;
           z-index: 0;
         }
       }
+
       @media only screen and (max-width: $screenMobile) {
         .my-pic,
         .filter,
@@ -115,10 +129,12 @@ $borderRadius: 5px;
     }
   }
 }
+
 @media only screen and (max-width: $screenMobile) {
   .About {
-    padding: 130px 10px 80px;
+    padding: 10px 10px 80px;
     height: unset;
+
     .title {
       .line {
         max-width: 100%;
@@ -126,10 +142,12 @@ $borderRadius: 5px;
     }
   }
 }
+
 @media (max-width: 2400px) and (min-width: 1281px) {
   .About {
     width: 80%;
     margin: auto;
+
     .about-row {
       max-width: 1024px;
     }

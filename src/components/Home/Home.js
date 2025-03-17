@@ -15,7 +15,6 @@ const Home = (props) => {
               color: '#d200ff'
             }}> {aboutObj.developer}
           </span>
-          {/* {aboutObj.sound} */}
         </h1>
       </div>
       <div className='description'>{aboutObj.description}</div>
