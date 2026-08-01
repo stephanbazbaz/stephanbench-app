@@ -22,7 +22,7 @@ const Contact = (props) => {
           <p>{contactText}</p>
           <div className='contact-btns'>
  <MyBtn text='Email' link={socialsArr[3].href} />
-           <MyBtn text='WhatsApp' link={"https://wa.me/+972525677479"} />
+           <MyBtn text='WhatsApp' link={"https://wa.me/+972544522614"} />
           </div>
          
         </div>
