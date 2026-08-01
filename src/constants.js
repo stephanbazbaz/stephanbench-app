@@ -11,6 +11,9 @@ import LULU_PIC from './assets/pics/lulusinit_pic.png'
 import PTCH from './assets/pics/PTCH.png'
 import OTEF from './assets/pics/OTEF.png'
 import MONK from './assets/pics/MONK.png'
+import LAMAFILM from './assets/pics/lama-films.png'
+import MAGALI from './assets/pics/magali.png'
+import ZEBRA from './assets/pics/zebra-books.png'
 
 
 export const mobileWidth = 769
@@ -148,6 +151,27 @@ export const experienceArr = [
 ]
 
 export const Projects = [
+    {
+    link: 'https://magali-sasson.co.il/',
+    title: 'Holistic Retreats Shop',
+    text: 'Chinese medicine therapist website',
+    tech: ['Shopify', 'css', 'javascript'],
+    pic: MAGALI
+  },
+    {
+    link: 'https://zebra-books.com/',
+    title: 'Online Book Store',
+    text: 'Chinese medicine therapist website',
+    tech: ['Shopify', 'css', 'javascript'],
+    pic: ZEBRA
+  },
+    {
+    link: 'https://www.lama-films.com/',
+    title: 'Company Portfolio Website',
+    text: 'Chinese medicine therapist website',
+    tech: ['Squarespace', 'css', 'javascript'],
+    pic: LAMAFILM
+  },
   {
     link: 'https://monkoffee.com/',
     title: 'Online Coffee Shop',
@@ -189,35 +213,7 @@ export const Projects = [
     text: 'Shopify design for desktop and mobile',
     tech: ['Shopify', 'css', 'javascript'],
     pic: DOZEN_SHOP
-  },
-  // {
-  //   link: 'https://drnaomiheyman.com/',
-  //   title: 'Therapist portfolio',
-  //   text: 'Portfolio app for an expressive therapist',
-  //   tech: ['React', 'css', 'javascript'],
-  //   pic: NAOMI_PIC
-  // },
-  // {
-  //   link: 'https://stephansupermarketapp.herokuapp.com/',
-  //   title: 'Super Market App',
-  //   text: 'Final project from my studies at Jhon bryce Academy. Full E-commerce website of a Vegan Supermarket.',
-  //   tech: ['React', 'Node.js', 'SQL', 'PostgreSQL', 'Heroku'],
-  //   pic: SUPER_PIC
-  // },
-  // {
-  //   link: 'https://stark-basin-64884.herokuapp.com/',
-  //   title: 'Vacations App',
-  //   text: 'Second project from my studies at Jhon bryce Academy emulating a vacation App where you can search & follow vacations. you can login to Admin to upload new vacations using admin username: adminadmin, password: admin1234.',
-  //   tech: ['React', 'Node.js', 'SQL', 'PostgreSQL', 'Heroku'],
-  //   pic: VACATION_PIC
-  // },
-  // {
-  //   link: 'https://brave-sammet-525389.netlify.app/',
-  //   title: 'MPC Disco Sequencer',
-  //   text: 'Virtual loop machine contaning disco sounds with option to record a session',
-  //   tech: ['React', 'Styled-Components', 'Netlify'],
-  //   pic: DISCO_PIC
-  // }
+  },  
 ]
 
 export const Articles = [

@@ -19,6 +19,15 @@
       }
     }
   }
+  .contact-btns{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    .resume-btn {
+    margin: 0;
+}
+  }
   .title {
     justify-content: center;
     margin: 0;

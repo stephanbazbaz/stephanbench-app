@@ -8,7 +8,7 @@ import Footer from '../Footer';
 
 const Contact = (props) => {
   const { linkArr } = props
-  const contactText = "Drop an email and i'll get back to you"
+  const contactText = "Drop an email or WhatsApp and i'll get back to you"
   return (
     <div className='Contact' ref={linkArr[2].ref}>
       <div
@@ -20,8 +20,13 @@ const Contact = (props) => {
         {/*<h1 className='get-in-t'>Get In Touch</h1>*/}
         <div >
           <p>{contactText}</p>
-          <MyBtn text='Email' link={socialsArr[3].href} />
+          <div className='contact-btns'>
+ <MyBtn text='Email' link={socialsArr[3].href} />
+           <MyBtn text='WhatsApp' link={"https://wa.me/+972525677479"} />
+          </div>
+         
         </div>
+       
       </div>
       <div>
         <Footer />
