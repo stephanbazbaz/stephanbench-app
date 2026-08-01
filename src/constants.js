@@ -64,8 +64,8 @@ export const aosConfig = {
 
 export const loremIpsum = "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
 // export const aboutText = "Hi! My name is Stephan and I enjoy creating things that live on the internet. My relationship with computers & softwares started back in 2006 when I did my Bachelor degree in Sound engineering. After years in the music production industry i decided to take things to the next level and studied web development. As a web developer I had the privilege of working with 2 major outsourcing companies which gave web solutions to fintech companies and start ups. As a developer my main focus is building accessible, inclusive products and digital experiences for a variety of clients."
-export const aboutText = "Full stack Web developer with 5 years experience.\n" +
-    "From complex server architecture and frontend pixel perfect scenarios to Shopify and Squaresapce design and code intervention ."
+export const aboutText = "Experienced Web Developer.\n" +
+    "From complex server architecture and frontend pixel perfect scenarios to Shopify and Squaresapce design with code intervention ."
 export const techText = "Here are a few technologies I’ve been working with recently:"
 
 
