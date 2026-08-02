@@ -13,11 +13,9 @@ function App() {
 
   const [isBlur, setIsBlur] = useState(false)
   const refObj = {
-    workRef: useRef(null),
     experienceRef: useRef(null),
     aboutRef: useRef(null),
     contactRef: useRef(null),
-    homeRef: useRef(null)
   }
   const linkArr = [
     {
@@ -30,11 +28,6 @@ function App() {
       number: '01.',
       ref: refObj.aboutRef
     },
-    // {
-    //   to: 'Experience',
-    //   number: '03.',
-    //   ref: refObj.workRef
-    // },
     {
       to: 'Contact',
       number: '04.',
@@ -45,11 +38,11 @@ function App() {
     <div className="App">
       <Header linkArr={linkArr} />
       <MobileHeader linkArr={linkArr} setIsBlur={setIsBlur} />
-      <div className={cx('wrapper', { blur: isBlur })}>
+      <main className={cx('wrapper', { blur: isBlur })}>
         <Work linkArr={linkArr} />
         <About linkArr={linkArr} />
         <Contact linkArr={linkArr} />
-      </div>
+      </main>
       <Socials />
     </div>
   );

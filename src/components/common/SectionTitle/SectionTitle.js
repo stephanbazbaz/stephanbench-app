@@ -5,7 +5,7 @@ const SectionTitle = (props) => {
     <div className='title flex'>
       <div className='flex'>
         <span className='link-number'>{number}</span>
-        <h1>{to}</h1>
+        <h2>{to}</h2>
       </div>
       <div className='line'></div>
     </div>

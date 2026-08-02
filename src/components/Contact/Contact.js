@@ -17,7 +17,6 @@ const Contact = (props) => {
         <SectionTitle
           to={"Contact"}
         />
-        {/*<h1 className='get-in-t'>Get In Touch</h1>*/}
         <div >
           <p>{contactText}</p>
           <div className='contact-btns'>

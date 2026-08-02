@@ -38,16 +38,16 @@ const MobileHeader = (props) => {
   return (
     <>
       <Slide appear={true} direction="down" in={!trigger}>
-        <div className={cx('MobileHeader')}>
+        <header className={cx('MobileHeader')}>
           <div className='flex-between'>
-            <a href='/'>
+            <a href='/' aria-label='Home'>
               <lord-icon
                 colors='primary:#ffffff,secondary:#d200ff'
                 {...homeIconObj}>
               </lord-icon>
             </a>
           </div>
-        </div>
+        </header>
       </Slide>
       <Slide appear={true} direction="down" in={!trigger}>
         <div className='burger-warp'>
@@ -73,7 +73,6 @@ const MobileHeader = (props) => {
         {linkArr.map((item, idx) =>
           <div key={idx}>
             <NavLink
-                // number={item.number}
                 text={item.to} handleClick={() => closeModal(item.ref)} />
           </div>
         )}

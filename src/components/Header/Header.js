@@ -24,12 +24,19 @@ const Header = (props) => {
   }
   const trigger = useScrollTrigger();
 
+  const handleThemeKeyDown = (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault()
+      changeTheme()
+    }
+  }
+
   return (
     <Slide appear={true} direction="down" in={!trigger}>
-      <div className='Header'>
+      <header className='Header'>
         <div className='navbar flex'>
           <div className='left-nav'>
-            <a href='/'>
+            <a href='/' aria-label='Home'>
               <lord-icon
                 colors={`primary:${state.color},secondary:#d200ff`}
                 {...homeIconObj}
@@ -40,21 +47,33 @@ const Header = (props) => {
             {linkArr.map((item, idx) =>
               <div key={idx} className={`nav-link-warp-${idx}`}>
                 <NavLink
-                    // number={item.number}
                     text={item.to} handleClick={() => scrollToElement(item.ref)} />
               </div>
             )}
             {state.isDark ?
               <Tooltip title='Light mode'>
-                <DarkModeIcon onClick={() => changeTheme()} htmlColor='white' />
+                <DarkModeIcon
+                  onClick={() => changeTheme()}
+                  onKeyDown={handleThemeKeyDown}
+                  htmlColor='white'
+                  aria-label='Toggle dark mode'
+                  role='button'
+                  tabIndex={0}
+                />
               </Tooltip>
               :
               <Tooltip title='Dark mode'>
-                <LightModeIcon onClick={() => changeTheme()} />
+                <LightModeIcon
+                  onClick={() => changeTheme()}
+                  onKeyDown={handleThemeKeyDown}
+                  aria-label='Toggle dark mode'
+                  role='button'
+                  tabIndex={0}
+                />
               </Tooltip>}
           </div>
         </div>
-      </div>
+      </header>
     </Slide>
   )
 }

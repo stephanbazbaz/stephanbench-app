@@ -7,7 +7,6 @@ const Work = (props) => {
   return (
     <div ref={linkArr[0].ref} className='Work'>
       <SectionTitle
-        // number={linkArr[2].number}
         to='Work'
       />
       {Projects.map((item, idx) =>

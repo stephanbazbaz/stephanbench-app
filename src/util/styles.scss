@@ -30,14 +30,17 @@ $screenMobile: 768px;
 @font-face {
   font-family: source_code;
   src: url("../assets/Source_Code_Pro/SourceCodePro-VariableFont_wght.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: quicksilver;
   src: url("../assets/Quicksand/Quicksand-VariableFont_wght.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: quicksilver_bold;
   src: url("../assets/Quicksand/static/Quicksand-Bold.ttf");
+  font-display: swap;
 }
 
 $paddingTopContainer: 80px;

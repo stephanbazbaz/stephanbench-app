@@ -8,18 +8,15 @@ import {
 import SectionTitle from '../common/SectionTitle/SectionTitle';
 const About = (props) => {
   const { linkArr } = props
-  // const right = window.innerWidth < mobileWidth ? { ...aosFadeUpUp } : { ...aosFadeUpRight }
   return (
     <div className='About' ref={linkArr[1].ref}>
       <SectionTitle
-        // number={linkArr[0].number}
         to={'About'}
       />
       <div className='about-row' >
         <div className='about-text-warp'>
           <p className='about-text' >{aboutText} <br />
           </p>
-          {/*<p className='about-text'>{techText}</p>*/}
           <div className='tech-warp flex'>
             {technologiesArr.map((item, idx) =>
               <div className='flex tech-col' key={`tech-${idx}`}>
@@ -29,7 +26,7 @@ const About = (props) => {
           </div>
         </div>
         <div className='img-warp'>
-          <img alt='stephan benchemoul web developer' className='my-pic' src={MYIMG} />
+          <img alt='stephan benchemoul web developer' className='my-pic' src={MYIMG} loading='lazy' decoding='async' />
           <div className='square'></div>
         </div>
       </div>

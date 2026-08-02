@@ -11,8 +11,6 @@ const ProjectCard = (props) => {
     tech = []
   } = props
   const isEven = num => num % 2 === 0
-  // const isFadeEven = isEven(idx) ? { ...aosFadeUpRight } : { ...aosFadeUpLeft }
-  // const isMobileFade = window.innerWidth < mobileWidth ? { ...aosFadeUpUp } : isFadeEven
   return (
     <div
       className={cx('ProjectCard flex', { left: !isEven(idx), right: isEven(idx) })}
@@ -21,25 +19,21 @@ const ProjectCard = (props) => {
         <a target='_blank' rel="noreferrer" href={link}>
           <div className='image-container' >
             <div className='image-warp'>
-              <img alt='studio_pic' src={pic} />
+              <img alt={title} src={pic} loading='lazy' decoding='async' />
             </div>
             <div className='filter'></div>
           </div>
         </a>
       </div>
       <div className='section-txt'>
-        {/*<h5>Featured Project</h5>*/}
         <h3>{title}</h3>
         <div className='image-display-none'>
           <div className='image-container'>
             <div className='image-warp'>
-              <img alt='studio_pic' src={pic} />
+              <img alt={title} src={pic} loading='lazy' decoding='async' />
             </div>
           </div>
         </div>
-        {/*<div className='txt'>*/}
-        {/*  <p>{text}</p>*/}
-        {/*</div>*/}
         <div className='tech-row'>
           {tech?.map((item, idx) => <div className='tech-col' key={`tech- ${idx}`}>{item}</div>)}
         </div>

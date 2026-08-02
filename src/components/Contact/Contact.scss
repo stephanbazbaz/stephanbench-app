@@ -10,14 +10,7 @@
   justify-content: space-between;
   .top-row {
     @include flex-col;
-    //padding-top: 80px;
     gap: 20px;
-    .get-in-t {
-      font-size: 50px;
-      @media only screen and (max-width: $screenMobile) {
-        font-size: 26px;
-      }
-    }
   }
   .contact-btns{
     display: flex;
@@ -34,7 +27,7 @@
     .flex {
       align-items: baseline;
     }
-    h1 {
+    h2 {
       color: $purpleColor;
       font-weight: unset;
       font-size: 26px;
@@ -51,7 +44,7 @@
     height: unset;
     gap: 20px;
   }
-  h1 {
+  h2 {
     text-align: center;
   }
   p {
