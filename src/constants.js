@@ -11,6 +11,7 @@ import MONK from './assets/pics/MONK.jpg'
 import LAMAFILM from './assets/pics/lama-films.jpg'
 import MAGALI from './assets/pics/magali.jpg'
 import ZEBRA from './assets/pics/zebra-books.jpg'
+import NAMER from './assets/pics/namer-site.png'
 
 export const socialsArr = [
   {
@@ -50,6 +51,13 @@ export const technologiesArr = [
   'Figma',
 ]
 export const Projects = [
+      {
+    link: 'https://www.namer-design.com/',
+    title: 'Wood Designer Portfolio',
+    text: 'Chinese medicine therapist website',
+    tech: ['Squarespace', 'css', 'javascript'],
+    pic: NAMER
+  },
     {
     link: 'https://magali-sasson.co.il/',
     title: 'Holistic Retreats Shop',
