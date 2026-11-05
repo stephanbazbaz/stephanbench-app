@@ -1,0 +1,51 @@
+@import "../../util/styles.scss";
+
+.Testimonials {
+  padding-top: $paddingTopContainer;
+  color: $whiteColor;
+  text-align: left;
+  max-width: 950px;
+  margin: 0 auto;
+
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+  }
+
+  .testimonial-card {
+    margin: 0;
+    background: #1a1a1a;
+    border-left: 3px solid $purpleColor;
+    border-radius: 6px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+
+    blockquote {
+      margin: 0;
+      color: #d6d6d6;
+      line-height: 1.6;
+      font-size: $font16;
+    }
+    figcaption {
+      display: flex;
+      flex-direction: column;
+      font-family: source_code;
+      font-size: $font14;
+      .name {
+        color: $whiteColor;
+      }
+      .brand {
+        text-decoration: none;
+        color: $purpleColor;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $screenMobile) {
+    padding: 30px 10px 40px;
+  }
+}

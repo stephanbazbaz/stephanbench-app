@@ -1,5 +1,6 @@
 import React from 'react'
 import { socialsArr } from './constants'
+import { CONTACT_EMAIL, MAILTO } from '../../constants'
 const Socials = () => {
   return (
     <div className='Socials'>
@@ -11,7 +12,7 @@ const Socials = () => {
         <div className='dVLQAC'></div>
       </div>
       <div className='mail-to'>
-        <a target='_blank' rel="noreferrer" href='mailto:stephanbncml@gmail.com'>stephanbncml@gmail.com</a>
+        <a target='_blank' rel="noreferrer" href={MAILTO}>{CONTACT_EMAIL}</a>
         <div className='dVLQAC'></div>
       </div>
     </div>

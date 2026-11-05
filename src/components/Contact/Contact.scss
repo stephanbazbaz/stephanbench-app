@@ -2,7 +2,7 @@
 
 .Contact {
   padding-top: $paddingTopContainer;
-  height: 90vh;
+  min-height: 70vh;
   color: $whiteColor;
   text-align: center;
   box-sizing: border-box;
@@ -11,6 +11,10 @@
   .top-row {
     @include flex-col;
     gap: 20px;
+  }
+  .contact-headline {
+    font-family: quicksilver_bold;
+    font-size: clamp(28px, 4vw, 44px);
   }
   .contact-btns{
     display: flex;

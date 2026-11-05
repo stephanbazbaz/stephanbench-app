@@ -1,0 +1,55 @@
+@import "../../util/styles.scss";
+
+.Services {
+  padding-top: $paddingTopContainer;
+  color: $whiteColor;
+  text-align: left;
+  max-width: 950px;
+  margin: 0 auto;
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    @media only screen and (max-width: 1100px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .service-card {
+    background: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 6px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+
+    &:hover {
+      border-color: $purpleColor;
+      transform: translateY(-3px);
+    }
+
+    h3 {
+      font-size: $font20;
+    }
+    p {
+      color: $greyColor;
+      line-height: $lineHeight24;
+    }
+    .price {
+      font-family: source_code;
+      font-size: $font14;
+      color: $purpleColor;
+      margin-top: auto;
+    }
+  }
+
+  @media only screen and (max-width: $screenMobile) {
+    padding: 30px 10px 40px;
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}

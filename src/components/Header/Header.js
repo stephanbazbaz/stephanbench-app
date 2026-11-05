@@ -3,7 +3,8 @@ import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import Tooltip from '@mui/material/Tooltip';
 import NavLink from '../common/NavLink';
-import { homeIconObj } from '../../constants';
+import MyBtn from '../common/MyBtn';
+import { homeIconObj, WHATSAPP_URL } from '../../constants';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import Slide from '@mui/material/Slide';
 
@@ -50,6 +51,9 @@ const Header = (props) => {
                     text={item.to} handleClick={() => scrollToElement(item.ref)} />
               </div>
             )}
+            <div className='nav-link-warp-3'>
+              <MyBtn text='Book a call' link={WHATSAPP_URL} primary />
+            </div>
             {state.isDark ?
               <Tooltip title='Light mode'>
                 <DarkModeIcon

@@ -3,6 +3,8 @@ import { ReactComponent as GITHUB } from '../../assets/logos/github_10.svg'
 import { ReactComponent as LINKDIN } from '../../assets/logos/linkedin_6.svg'
 import { ReactComponent as MAIL } from '../../assets/logos/mail-outline_1.svg'
 
+import { MAILTO } from '../../constants'
+
 export const socialsArr = [
   {
     href: 'https://www.linkedin.com/in/stephan-benchemoul-38879320b/',
@@ -20,7 +22,7 @@ export const socialsArr = [
     alt: 'facebook'
   },
   {
-    href: 'mailto:stephanbncml@gmail.com',
+    href: MAILTO,
     src: MAIL,
     alt: 'email'
   },

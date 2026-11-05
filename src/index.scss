@@ -47,7 +47,7 @@ body {
       .tech-row,
       h3 {
         color: $colorBlack;
-        @media only screen and (max-width: $screenMobile) {
+        @media only screen and (max-width: $screenTablet) {
           color: $whiteColor;
         }
       }
@@ -61,8 +61,15 @@ body {
     color: $colorBlack !important;
   }
 
-  .resume-btn a {
+  .resume-btn:not(.btn-primary) a {
     color: $colorBlack !important;
+  }
+  .Hero .hero-headline,
+  .Contact .contact-headline {
+    color: $colorBlack;
+  }
+  .Hero .hero-subline {
+    color: #3a3a3a;
   }
   .Work .articles-warp {
     background: whitesmoke;

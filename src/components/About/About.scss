@@ -5,7 +5,7 @@ $borderRadius: 5px;
   padding-top: 120px;
   color: $whiteColor;
   text-align: left;
-  height: 100vh;
+  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -52,13 +52,17 @@ $borderRadius: 5px;
 
       .tech-warp {
         flex-flow: wrap;
-        justify-content: space-between;
+        justify-content: flex-start;
+        column-gap: 28px;
         max-width: 500px;
         font-size: $font16;
+        @media only screen and (max-width: $screenMobile) {
+          padding: 0 10px;
+          column-gap: 20px;
+        }
 
         .tech-col {
-          margin: 10px 0;
-          min-width: 130px;
+          margin: 8px 0;
           font-family: source_code;
           font-size: $font14;
         }
@@ -68,36 +72,56 @@ $borderRadius: 5px;
           margin-right: 5px;
         }
       }
+
+      .under-the-hood {
+        font-family: source_code;
+        font-size: $font13;
+        font-weight: 400;
+        color: #6f6f6f;
+        @media only screen and (max-width: $screenMobile) {
+          padding: 0 10px;
+        }
+      }
     }
 
     .img-warp {
       position: relative;
       width: fit-content;
+      flex-shrink: 0;
+      // leave room for the offset .square frame so it isn't clipped
+      margin-right: 34px;
+      @media only screen and (max-width: $screenMobile) {
+        margin-right: 15px;
+      }
 
-      .my-pic {
+      .pic-backdrop {
         @include wh300;
-        z-index: 4;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
         border-radius: $borderRadius;
-        transition: all 0.5s;
-        filter: brightness(0.7);
+        // White photo background picks up the brand gradient via multiply
+        background: linear-gradient(160deg, #f4dcff 0%, #d79bff 55%, #a64dff 100%);
 
-        &:hover {
-          filter: brightness(1);
+        &:hover + .square {
+          left: $font15;
+          top: $font15;
 
-          + .square {
-            left: $font15;
-            top: $font15;
-
-            @media only screen and (max-width: $screenMobile) {
-              left: 5px;
-              top: 5px;
-            }
+          @media only screen and (max-width: $screenMobile) {
+            left: 5px;
+            top: 5px;
           }
         }
+      }
 
-        @media only screen and (max-width: $screenMobile) {
-          position: relative;
-        }
+      .my-pic {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+        display: block;
+        mix-blend-mode: multiply;
+        filter: saturate(1.05);
       }
 
       .square {
@@ -116,7 +140,7 @@ $borderRadius: 5px;
       }
 
       @media only screen and (max-width: $screenMobile) {
-        .my-pic,
+        .pic-backdrop,
         .filter,
         .square {
           @include wh200;

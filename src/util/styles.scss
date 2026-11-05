@@ -26,6 +26,9 @@ $font13: 13px;
 $titleFont: clamp(40px, 5vw, 80px);
 
 $screenMobile: 768px;
+$screenTablet: 960px;
+// Below this the fixed side rails (social icons / email) collide with content and move to the footer
+$screenRails: 1100px;
 
 @font-face {
   font-family: source_code;
